@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Командний рядок - хитрості і трюки</title>
+<meta content="Командний рядок - хитрості і трюки" itemprop="description" property="og:title">
+<meta content="Описано деякі хитрості і трюки по роботі з командним рядком" itemprop="name" name="description" property="og:description">
+<meta content="http://lukom.org/blog/cmd" property="og:url">
+<meta content="http://lukom.org/system/blog-images/cmd-mini.gif" property="og:image">
+<meta content="article" property="og:type">
+<meta content="100001353345404" property="fb:admins">
+<meta content="143733555820368" property="fb:app_id">
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="pAh2JzkUJBSRh7irlY1w4eAxug7xO2K121PBEQ1/UdG+YFsLKK1uti7S5zU/7nVjYTKy7ZnbPagb3wqc2QYkww==" />
+<link href="/rss.xml" rel="alternate" title="Найсвіжіші новини на Lukom.Org" type="application/rss+xml">
+<link href="/favicon.ico" rel="shortcut icon">
+<link href="http://lukom.org/blog/cmd" rel="canonical">
+<link rel="stylesheet" media="all" href="/assets/application-62b843cdf11b7d1c3ec4770e46cf10db6ab85cce990700bd6f2bdcb79a5821e8.css" />
+
+
+<script src="/assets/application-d74f2472fca0149ef13a2494ca651a42cabe54050dbec767cf4fca412ec93b3f.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-19834031-1', 'lukom.org');
+  ga('send', 'pageview');
+</script>
+
+<script async="async" src="https://apis.google.com/js/platform.js">
+{lang: 'uk'}
+</script>
+
+</head>
+<body>
+<div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=143733555820368";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+<div class="header-toolbar">
+<div class="page-wrap">
+<ul>
+<li><a href="/">Головна</a></li>
+<li><a href="/pages/author">Автор</a></li>
+</ul>
+</div>
+</div>
+<div class="header">
+<div class="page-wrap">
+<div class="logo">
+<div class="logo-text">Вперед і вгору!</div>
+<div class="logo-subtext">блог Лукома</div>
+</div>
+<div class="about-author">
+<div class="author-speak">
+Привіт, мене звати Лев Лукомський
+<br/> я займаюсь розробкою веб-сайтів та ігор
+<br/> ..і записую в блог все що взбреде в голову :)
+<a href="/pages/author">Автор</a>
+</div>
+<div class="follow-links">
+<a class="rss-big-link" target="_blank" href="/rss.xml">RSS</a>
+</div>
+<div class="contacts-links">
+<a title="Джмейл" class="gmail ico" href="mailto:lllukom@gmail.com">Gmail</a>
+<a title="Цукердрук" class="facebook ico" target="_blank" href="https://www.facebook.com/llukomsky">Facebook</a>
+<a title="Ґуґлоплюсик" class="gplus ico" target="_blank" href="https://plus.google.com/+%D0%9B%D0%B5%D0%B2%D0%9B%D1%83%D0%BA%D0%BE%D0%BC%D1%81%D1%8C%D0%BA%D0%B8%D0%B9">Google Plus</a>
+</div>
+</div>
+</div>
+</div>
+<div class="main-menu">
+<div class="page-wrap">
+<ul>
+<li><a href="/category/rozrobka">Розробка (22)</a></li>
+<li><a href="/category/rizne">Різне (52)</a></li>
+<li><a href="/category/tsikavynky">Цікавинки (12)</a></li>
+<li><a href="/category/veseloshchi">Веселощі (14)</a></li>
+<li>
+<a href="/category/novyny-saitu">Новини сайту</a>
+</li>
+</ul>
+</div>
+</div>
+
+<div class="torso">
+<div class="page-wrap">
+<div class="page-content">
+<div class="flash-messages">
+</div>
+
+<div class="box main-box post rozrobka">
+<h1 class="box-title">Командний рядок - хитрості і трюки</h1>
+<div class="box-content">
+<div class="post-meta">
+<span class="link category-link">
+<a href="/category/rozrobka">Розробка</a>
+</span>
+<span class="link tag-link">CMD, Windows, Автоматика, Лайфхаки, Програмування</span>
+<span class="link date-link">2009.05.24</span>
+<span class="link edited-link">Відредаговано: 2016.05.07</span>
+</div>
+<div class="post-content"><img width="155" height="155" class="post-image" src="/system/blog-images/cmd-mini.gif" alt="" />
+<p style="padding-top:66px">Деякі хитрощі по роботі з командним рядком (КР).</p> 
+<br style="clear:both"/>
+<br class="newsbreak"/> 
+<p>1. Щоб запустити КР натискаємо <kbd>Win</kbd> + <kbd>R</kbd> (Або просто <kbd>Win</kbd> у <em>Windows 7</em>) вводимо <strong>cmd </strong>і натискаємо <kbd>Enter</kbd></p> 
+<div class="hr"></div>
+<p>2. Для зручної роботи з КР заходимо у властивості <em>(натискаємо правою кнопкою на заголовку вікна, вибираємо "Властивості")</em> та ставимо галочки для двох опцій:</p> 
+<ul> 
+<li><strong>Виділення мишею <em>(Quick edit mode</em></strong><em>)</em> - дозволяє користуватись мишкою в КР</li> 
+<li><strong>Швидке вставлення <em>(Insert mode)</em></strong> - дозволяє вставляти текст в КР з буферу обміну</li></ul> 
+
+<div class="box-images"><a class="preview-image" href="/system/blog-images/cmd-settings-1.gif" class="preview-image" title="Налаштування командного рядка"><img height="225" src="/system/blog-images/cmd-settings-1.gif" alt="Налаштування командного рядка" /></a></div> 
+
+<p>Включення цих двох надзвичайно корисних опцій дозволяє:</p> 
+<ul> 
+<li>Виділити мишкою довільну область екрану і натиснути <kbd>Enter</kbd>, щоб <u>скопіювати виділене у буфер</u></li> 
+<li>Натиснути правою кнопкою мишки, щоб <u>вставити текст із буферу</u></li></ul> 
+
+<div class="box-images"><a class="preview-image" href="/system/blog-images/cmd-1.gif" class="preview-image" title="Виділення тексту мишкою в консолі"><img height="225" src="/system/blog-images/cmd-1.gif" alt="Виділення тексту мишкою в консолі" /></a></div> 
+
+<div class="hr"></div>
+<p>3. Кнопки які часто використовуються при роботі з КР:</p> 
+<ul> 
+<li><kbd>Tab</kbd> - виводить перший файл у поточній папці, якщо ще раз натиснути - другий, і т.д. Можна набрати першу частину імені файлу, а тоді натиснути <kbd>Tab</kbd>, тоді виведеться файл, який починається на запропоновані символи.</li> 
+<li><kbd>Up</kbd> / <kbd>Down</kbd> - попередня/наступна команда з історії</li> 
+<li><kbd>Right</kbd> - вивести наступний символ з попередньої команди з історії</li></ul> 
+<div class="hr"></div>
+<p>4. Спеціальні кнопки:</p> 
+<ul> 
+<li><kbd>F1</kbd> Повторює символи із попередньої команди один за одним (аналог <kbd>Right</kbd>)</li> 
+<li><kbd>F2</kbd> Показує діалог "Копіювати до символу"</li> 
+<li><kbd>F3</kbd> Показує останню команду</li> 
+<li><kbd>F4</kbd> Показує діалог "Видалити до символу"</li> 
+<li><kbd>F5</kbd> Показує попередню команду (аналог <kbd>Up</kbd>)</li> 
+<li><kbd>F6</kbd> Вставляє ^z</li> 
+<li><strong><kbd>F7</kbd> Показує меню з історією команд</strong></li> 
+<li><kbd>F8</kbd> Перебирає по черзі команди з історії (Починаючи з останньої)</li> 
+<li><kbd>F9</kbd> Показує діалог "Введіть номер команди"</li></ul> 
+<div class="hr"></div>
+<p>5. Щоб виключити КР в англійському віндовсі можна натиснути <kbd>Alt</kbd> + <kbd>Space</kbd> + <kbd>C</kbd>, аналогів для своєї української вісти я не знайшов..<br /></p></div>
+<div class="social-buttons">
+<div class="fb-like" data-layout="button_count" data-send="false" data-width="120"></div>
+<a class="twitter-share-button" data-hashtags="lukomorg" data-lang="uk" data-text="Командний рядок - хитрості і трюки" data-url="http://lukom.org/blog/cmd" href="https://twitter.com/share">Tweet</a>
+<div class="g-plusone" data-annotation="bubble" data-size="medium" data-width="120"></div>
+<script>
+  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+  if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
+  fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+  
+  window.___gcfg = {lang: 'uk'};
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+</div>
+
+<div id="related_posts">
+<div class="h2">Читайте також</div>
+<ul>
+<li><a href="/blog/ukr-keyb-win7">Українська розкладка на Windows 7</a></li>
+<li><a href="/blog/files-report">Генеруємо звіт про файли</a></li>
+<li><a href="/blog/few-hacks-for-win">Декілька хитростей для Windows</a></li>
+<li><a href="/blog/devdays2008">Дні розробника 2008</a></li>
+<li><a href="/blog/music-conv-routine">Впорядкування музики ч.2</a></li>
+</ul>
+</div>
+<div id="comments">
+<div class="comments" id="comments_entries">
+<div class="h2">Коментарі (<span>1</span>)</div>
+<div class="comment" id="comment_388">
+<div class="comment-meta">
+<div class="avatar"><img alt="" src="https://secure.gravatar.com/avatar/826d0bc7f6b4b43f3fceec0844c5b1e8.jpg?size=32&amp;default=wavatar&amp;rating=g" width="32" height="32" /></div>
+<div class="author">DixonD</div>
+<div class="date">2009.05.29</div>
+<div class="browser">
+<img alt="firefox" title="firefox" src="/assets/icons/browsers/firefox-a656a35645e76eeb7a4602c8b353f910266a5825baab2bb92683d43f9cc2598a.png" width="16" height="16" />
+</div>
+</div>
+<div class="comment-content">Дякую! Короткий, проте інформативний пост;-)</div>
+</div>
+
+</div>
+</div>
+
+<div class="fb-comments" data-href="http://lukom.org/blog/cmd" data-num-posts="5" data-width="510"></div>
+</div>
+</div>
+
+</div>
+<div class="primary-sidebar">
+<div class="box">
+<div class="box-title">Деякі дописи</div>
+<div class="box-content">
+<ul>
+<li><a href="/blog/hexabble">Гексабл</a></li>
+<li><a href="/blog/country-flags">Прапорці</a></li>
+<li><a href="/blog/kalendaryk-pynaryk">Календарик</a></li>
+<li><a href="/blog/months">Шпаргалка місяців</a></li>
+<li><a target="_blank" href="simple-pages/utf8-table/1">Таблиця utf-8</a></li>
+<li><a href="/blog/prykoly-skaipu">Приколи скайпу</a></li>
+<li><a href="/blog/dovhi-anekdoty">Довгі анекдоти</a></li>
+<li><a href="/blog/two-plus-two">2 + 2 = 5</a></li>
+<li><a href="/blog/usi-trykutnyky-odynakovi">Однакові △</a></li>
+</ul>
+</div>
+</div>
+<div class="box">
+<div class="box-title">Сторінки</div>
+<div class="box-content">
+<ul>
+<li><a href="/pages/takaboni/1">Такабоні</a></li>
+<li><a href="/pages/archive">Архів</a></li>
+</ul>
+</div>
+</div>
+<div class="box">
+<div class="box-title">Цікаві сайти</div>
+<div class="box-content">
+<ul>
+<li><a title="Українізація чужизмів" target="_blank" class="external" href="http://slovotvir.org.ua">Словотвір</a></li>
+<li><a title="Український цитатник" target="_blank" class="external" href="http://ukrbash.org/">УкрБаш</a></li>
+<li><a title="Український торент-трекер" target="_blank" class="external" href="http://hurtom.com/">Гуртом</a></li>
+</ul>
+
+</div>
+</div>
+<div class="box counters">
+<div class="box-title">Подобається? Плюсуйте!</div>
+<div class="box-content">
+<div class="g-page" data-href="https://plus.google.com/106462298861442752735" data-rel="publisher" data-showcoverphoto="false" data-showtagline="false" data-width="215"></div>
+</div>
+</div>
+
+
+</div>
+</div>
+</div>
+<div class="footer">
+<div class="page-wrap">
+<div class="col">
+<div class="footer-title">Останні дописи</div>
+<ul>
+<li><a href="/blog/site-news-100">Новини сайту 100</a></li>
+<li><a href="/blog/site-news-100">Новини сайту 100</a></li>
+<li><a href="/blog/usi-vybory-nechesni">Усі вибори нечесні</a></li>
+<li><a href="/blog/suchasni-puzomirky">Сучасні пузомірки</a></li>
+<li><a href="/blog/spdy-na-saiti">Поставив SPDY на сайт</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+</body>
+</html>

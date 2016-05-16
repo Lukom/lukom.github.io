@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Підхід до написання стилів для IE</title>
+<meta content="Підхід до написання стилів для IE" itemprop="description" property="og:title">
+<meta content="Метод написання спеціальних стилів для IE не використовуючи умовних коментарів" itemprop="name" name="description" property="og:description">
+<meta content="http://lukom.org/blog/styli-dlia-ie" property="og:url">
+<meta content="" property="og:image">
+<meta content="article" property="og:type">
+<meta content="100001353345404" property="fb:admins">
+<meta content="143733555820368" property="fb:app_id">
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="x1QlGN8GnB3dTDVQ2lBIE0qdGkjBSRLqu9MN+sB6YPndPAg0zr/Wv2IZas5wM02Ry54Sq6mpTfd7X8Z3FAMV6w==" />
+<link href="/rss.xml" rel="alternate" title="Найсвіжіші новини на Lukom.Org" type="application/rss+xml">
+<link href="/favicon.ico" rel="shortcut icon">
+<link href="http://lukom.org/blog/styli-dlia-ie" rel="canonical">
+<link rel="stylesheet" media="all" href="/assets/application-62b843cdf11b7d1c3ec4770e46cf10db6ab85cce990700bd6f2bdcb79a5821e8.css" />
+
+
+<script src="/assets/application-d74f2472fca0149ef13a2494ca651a42cabe54050dbec767cf4fca412ec93b3f.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-19834031-1', 'lukom.org');
+  ga('send', 'pageview');
+</script>
+
+<script async="async" src="https://apis.google.com/js/platform.js">
+{lang: 'uk'}
+</script>
+
+</head>
+<body>
+<div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=143733555820368";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+<div class="header-toolbar">
+<div class="page-wrap">
+<ul>
+<li><a href="/">Головна</a></li>
+<li><a href="/pages/author">Автор</a></li>
+</ul>
+</div>
+</div>
+<div class="header">
+<div class="page-wrap">
+<div class="logo">
+<div class="logo-text">Вперед і вгору!</div>
+<div class="logo-subtext">блог Лукома</div>
+</div>
+<div class="about-author">
+<div class="author-speak">
+Привіт, мене звати Лев Лукомський
+<br/> я займаюсь розробкою веб-сайтів та ігор
+<br/> ..і записую в блог все що взбреде в голову :)
+<a href="/pages/author">Автор</a>
+</div>
+<div class="follow-links">
+<a class="rss-big-link" target="_blank" href="/rss.xml">RSS</a>
+</div>
+<div class="contacts-links">
+<a title="Джмейл" class="gmail ico" href="mailto:lllukom@gmail.com">Gmail</a>
+<a title="Цукердрук" class="facebook ico" target="_blank" href="https://www.facebook.com/llukomsky">Facebook</a>
+<a title="Ґуґлоплюсик" class="gplus ico" target="_blank" href="https://plus.google.com/+%D0%9B%D0%B5%D0%B2%D0%9B%D1%83%D0%BA%D0%BE%D0%BC%D1%81%D1%8C%D0%BA%D0%B8%D0%B9">Google Plus</a>
+</div>
+</div>
+</div>
+</div>
+<div class="main-menu">
+<div class="page-wrap">
+<ul>
+<li><a href="/category/rozrobka">Розробка (22)</a></li>
+<li><a href="/category/rizne">Різне (52)</a></li>
+<li><a href="/category/tsikavynky">Цікавинки (12)</a></li>
+<li><a href="/category/veseloshchi">Веселощі (14)</a></li>
+<li>
+<a href="/category/novyny-saitu">Новини сайту</a>
+</li>
+</ul>
+</div>
+</div>
+
+<div class="torso">
+<div class="page-wrap">
+<div class="page-content">
+<div class="flash-messages">
+</div>
+
+<div class="box main-box post rozrobka">
+<h1 class="box-title">Підхід до написання стилів для IE</h1>
+<div class="box-content">
+<div class="post-meta">
+<span class="link category-link">
+<a href="/category/rozrobka">Розробка</a>
+</span>
+<span class="link tag-link">Веб-розробка, Досвід, Хитрості, Браузери, Css, Оптимізація</span>
+<span class="link date-link">2012.01.12</span>
+<span class="link edited-link">Відредаговано: 2016.05.07</span>
+</div>
+<div class="post-content"><p>
+	Часто для <em>Internet Explorer</em>`а потрібно писати свої стилі і для цього переважно додають файлики ie.css, ie7.css, ie8.css, ... які запихають в умовні коментарі ось так:
+</p>
+<pre style="margin-right: -535px;">
+&lt;!--[if IE]&gt;
+&lt;link href=&quot;ie.css&quot; type=&quot;text/css&quot;/&gt;
+&lt;![endif]--&gt;
+&lt;!--[if IE8]&gt;
+&lt;link href=&quot;ie8.css&quot; type=&quot;text/css&quot;/&gt;
+&lt;![endif]--&gt;
+&lt;!--[if IE7]&gt;
+&lt;link href=&quot;ie7.css&quot; type=&quot;text/css&quot;/&gt;
+&lt;![endif]--&gt;
+</pre>
+<p>
+	Основна перевага цього методу в тому що спеціальні стилі для IE є в окремих файлах і &laquo;нормальні&raquo; браузери не бачать цих &laquo;хаків&raquo;.
+</p>
+<p>
+	Але я не люблю цей спосіб і ось чому - <strong>такий код важко підтримувати</strong>. Уявімо що сайт пишуть 2 людини. Людина яка верстає вона все тримає в голові і легко порозпихає хаки для IE по різних файликах. Але коли друга людина захоче зробити якусь будь-яку зміну в стилі - вона ж не знає де які стилі переписуються, і їй доведеться пошукати в кожному файлі <em>ie.css</em>, <em>ie7.css</em>, <em>ie8.css</em> (а в майбутньому і <em>ie9.css</em>, <em>ie10.css</em>, ...) чи даний стиль не переписується для IE і тільки тоді робити зміну. Фактично приходиться постійно усно мерджити всі ці файли.
+</p>
+<p>
+	Тому деякий час популярними були <em>CSS-хаки</em> - для IE6 це було &laquo;<span style="font-family:courier new,courier,monospace;">html *</span>&raquo;, для IE7 - &laquo;<code class="style selector fragment">*:first-child+html</code>&raquo; і т.д. Стилі для IE переписувалися в тому ж файлі в якому оголошувався стиль, наприклад:
+</p>
+<pre style="margin-right: -535px;">
+.some-button {
+  width: 50px;
+}
+<code class="style selector fragment">*:first-child+html</code> .some-button {
+  width: 48px; /* for IE7 only */
+}
+</pre>
+<p>
+	і це було дуже зручно - коли хтось міняє стиль width для .some-button він зразу бачить що для IE цей стиль чомусь переписаний і поміняє зразу для IE, і йому не треба лазити по різних файликах і шукати де ще може переписуватись .some-button. Достатньо просто проскролити до низу правила і подивитись чи воно там не переписується.
+</p>
+<p>
+	Але css-хаки це погано, бо зменшується швидкодія (<code class="style selector fragment">*:first-child+html</code> - не надто оптимальне правило) і зменшується читабельність.
+</p>
+<p>
+	Тому є кращий спосіб - <strong>навішати на елемент &lt;html&gt; класи для IE</strong> - <em>.ie</em>, <em>.ie7</em>, <em>.ie8</em>, ..., <em>.lt-ie8</em>, <em>.lt-ie8</em>, ... (<em>&laquo;lt&raquo;</em> означає <em>&laquo;less than&raquo;</em>). Наприклад для IE7 елемент html буде виглядати так:
+</p>
+<pre style="margin-right: -535px;">
+<code class="style selector fragment">&lt;html class=&quot;ie ie7 lt-ie8 lt-ie9 lt-ie10&quot;&gt;</code></pre>
+<p>
+	І тоді можна переписати стилі так:
+</p>
+<pre style="margin-right: -535px;">
+<code class="style selector fragment">.some-button {
+  </code>background-image: <code class="style selector fragment"><code class="css"><span class="pln">url</span><span class="pun">(</span><span class="pln">data</span><span class="pun">:</span><span class="pln">image</span><span class="pun">/</span><span class="pln">gif</span><span class="pun">;</span><span class="pln">base64</span><span class="pun">,</span><span class="pln">R0lGODl...);</span></code>
+}
+</code><code class="style selector fragment">.lt-ie8 .some-button {
+  </code>background-image: <code class="style selector fragment"><code class="css"><span class="pln">url</span><span class="pun">(button-bg.gif</span><span class="pln">);</span></code>
+}</code>
+</pre>
+<p>
+	Тут для прикладу для всіх браузерів буде вкладена картинка, а для браузерів IE7 і старіших буде зовнішня картинка, оскільки IE7 не підтримує data uri.
+</p>
+<p>
+	Ці стилі (.ie, ie7, ...) можна легко згенерувати на стороні сервера чи на стороні клієнта javascript`ом.
+</p>
+<p>
+	Основна перевага цього методу написання спеціальних стилів під IE в тому що такий код підтримувати набагато легше.
+</p>
+</div>
+<div class="social-buttons">
+<div class="fb-like" data-layout="button_count" data-send="false" data-width="120"></div>
+<a class="twitter-share-button" data-hashtags="lukomorg" data-lang="uk" data-text="Підхід до написання стилів для IE" data-url="http://lukom.org/blog/styli-dlia-ie" href="https://twitter.com/share">Tweet</a>
+<div class="g-plusone" data-annotation="bubble" data-size="medium" data-width="120"></div>
+<script>
+  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+  if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
+  fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+  
+  window.___gcfg = {lang: 'uk'};
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+</div>
+
+<div id="related_posts">
+<div class="h2">Читайте також</div>
+<ul>
+<li><a href="/blog/css3-vzhe-siohodni">CSS3 вже сьогодні</a></li>
+<li><a href="/blog/spdy-na-saiti">Поставив SPDY на сайт</a></li>
+<li><a href="/blog/tablycia-utf8-onovlena">Таблиця utf-8 символів оновлена!</a></li>
+<li><a href="/blog/how-to-download-books">Як завантажувати книжки з нету</a></li>
+<li><a href="/blog/sql-columns-list">Список полей таблиці в MSSQL</a></li>
+</ul>
+</div>
+<div id="comments">
+<div class="comments" id="comments_entries">
+<div class="h2">Коментарі (<span>3</span>)</div>
+<div class="comment" id="comment_1495">
+<div class="comment-meta">
+<div class="avatar"><img alt="" src="https://secure.gravatar.com/avatar/b8f0151689d924b68dfee734ffab20f0.jpg?size=32&amp;default=wavatar&amp;rating=g" width="32" height="32" /></div>
+<div class="author">Lukom</div>
+<div class="date">2012.01.12</div>
+<div class="browser">
+<img alt="firefox" title="firefox" src="/assets/icons/browsers/firefox-a656a35645e76eeb7a4602c8b353f910266a5825baab2bb92683d43f9cc2598a.png" width="16" height="16" />
+</div>
+</div>
+<div class="comment-content">Так, бачив таке - непоганий спосіб, причому для нього не треба ніякого серверного чи javascript коду. Але мені, все ж, більше подобається згенерувати всі необхідні класи на сервері - так html-код чистіший і не дуріють редактори коду від того що 5 html-елементів.<br /></div>
+</div>
+
+<div class="comment" id="comment_1496">
+<div class="comment-meta">
+<div class="avatar"><img alt="" src="https://secure.gravatar.com/avatar/66d2b31e69916084b57751f0e63ed21c.jpg?size=32&amp;default=wavatar&amp;rating=g" width="32" height="32" /></div>
+<div class="author">@RomaLesyk</div>
+<div class="date">2012.01.13</div>
+<div class="browser">
+<img alt="chrome" title="chrome" src="/assets/icons/browsers/chrome-599273fb6c3c118598ed689b6289c08fe6e7aa15eba9655b1184f89805f34668.png" width="16" height="16" />
+</div>
+</div>
+<div class="comment-content">Чому редактори мають дуріти? Всі &lt;html&gt; крім одного "чистого" закоментовані.</div>
+</div>
+
+<div class="comment" id="comment_1494">
+<div class="comment-meta">
+<div class="avatar"><img alt="" src="https://secure.gravatar.com/avatar/66d2b31e69916084b57751f0e63ed21c.jpg?size=32&amp;default=wavatar&amp;rating=g" width="32" height="32" /></div>
+<div class="author">@RomaLesyk</div>
+<div class="date">2012.01.12</div>
+<div class="browser">
+<img alt="chrome" title="chrome" src="/assets/icons/browsers/chrome-599273fb6c3c118598ed689b6289c08fe6e7aa15eba9655b1184f89805f34668.png" width="16" height="16" />
+</div>
+</div>
+<div class="comment-content">Пол Айріш винайшов вже дуже давно прекрасний спосіб визначення інтернет експлорерів -&nbsp;
+<a href="http://paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/" rel="nofollow" target="_blank" class="external">http://paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/</a>.</div>
+</div>
+
+</div>
+</div>
+
+<div class="fb-comments" data-href="http://lukom.org/blog/styli-dlia-ie" data-num-posts="5" data-width="510"></div>
+</div>
+</div>
+
+</div>
+<div class="primary-sidebar">
+<div class="box">
+<div class="box-title">Деякі дописи</div>
+<div class="box-content">
+<ul>
+<li><a href="/blog/hexabble">Гексабл</a></li>
+<li><a href="/blog/country-flags">Прапорці</a></li>
+<li><a href="/blog/kalendaryk-pynaryk">Календарик</a></li>
+<li><a href="/blog/months">Шпаргалка місяців</a></li>
+<li><a target="_blank" href="simple-pages/utf8-table/1">Таблиця utf-8</a></li>
+<li><a href="/blog/prykoly-skaipu">Приколи скайпу</a></li>
+<li><a href="/blog/dovhi-anekdoty">Довгі анекдоти</a></li>
+<li><a href="/blog/two-plus-two">2 + 2 = 5</a></li>
+<li><a href="/blog/usi-trykutnyky-odynakovi">Однакові △</a></li>
+</ul>
+</div>
+</div>
+<div class="box">
+<div class="box-title">Сторінки</div>
+<div class="box-content">
+<ul>
+<li><a href="/pages/takaboni/1">Такабоні</a></li>
+<li><a href="/pages/archive">Архів</a></li>
+</ul>
+</div>
+</div>
+<div class="box">
+<div class="box-title">Цікаві сайти</div>
+<div class="box-content">
+<ul>
+<li><a title="Українізація чужизмів" target="_blank" class="external" href="http://slovotvir.org.ua">Словотвір</a></li>
+<li><a title="Український цитатник" target="_blank" class="external" href="http://ukrbash.org/">УкрБаш</a></li>
+<li><a title="Український торент-трекер" target="_blank" class="external" href="http://hurtom.com/">Гуртом</a></li>
+</ul>
+
+</div>
+</div>
+<div class="box counters">
+<div class="box-title">Подобається? Плюсуйте!</div>
+<div class="box-content">
+<div class="g-page" data-href="https://plus.google.com/106462298861442752735" data-rel="publisher" data-showcoverphoto="false" data-showtagline="false" data-width="215"></div>
+</div>
+</div>
+
+
+</div>
+</div>
+</div>
+<div class="footer">
+<div class="page-wrap">
+<div class="col">
+<div class="footer-title">Останні дописи</div>
+<ul>
+<li><a href="/blog/site-news-100">Новини сайту 100</a></li>
+<li><a href="/blog/site-news-100">Новини сайту 100</a></li>
+<li><a href="/blog/usi-vybory-nechesni">Усі вибори нечесні</a></li>
+<li><a href="/blog/suchasni-puzomirky">Сучасні пузомірки</a></li>
+<li><a href="/blog/spdy-na-saiti">Поставив SPDY на сайт</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+</body>
+</html>

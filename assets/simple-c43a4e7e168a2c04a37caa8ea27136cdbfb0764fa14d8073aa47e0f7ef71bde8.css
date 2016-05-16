@@ -1,0 +1,178 @@
+/* --------- Global styles --------- */
+/* line 2, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_simple.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 6, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_simple.scss */
+body {
+  background-color: #fff;
+  color: #404040;
+  font: 13px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: relative;
+}
+
+/* line 12, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_simple.scss */
+img {
+  border: 0;
+  font-size: 10px;
+  line-height: 10px;
+}
+
+/* line 17, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_simple.scss */
+a {
+  color: #0069D6;
+  text-decoration: none;
+}
+/* line 20, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_simple.scss */
+a:hover {
+  color: #00438A;
+  text-decoration: underline;
+}
+/* line 24, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_simple.scss */
+a img {
+  border: 0;
+}
+
+/* ---------- Unicode Table --------- */
+/* line 28, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_simple.scss */
+.unicode-table {
+  font: 22px/22px Arial, sans-serif;
+  width: 1168px;
+  overflow: hidden;
+}
+/* line 33, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_simple.scss */
+.unicode-table .top-numbers {
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 30;
+  min-width: 1101px;
+  width: 100%;
+  height: 22px;
+  border-bottom: solid 1px #404040;
+  overflow: hidden;
+}
+/* line 44, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_simple.scss */
+.unicode-table .top-numbers ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: left;
+  position: relative;
+  z-index: 30;
+}
+/* line 51, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_simple.scss */
+.unicode-table .top-numbers ul > li {
+  font-size: 16px;
+  vertical-align: middle;
+  width: 22px;
+  float: left;
+  text-align: center;
+}
+/* line 57, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_simple.scss */
+.unicode-table .top-numbers ul > li#calculated_code {
+  width: 65px;
+  border-right: solid 1px #404040;
+  font-weight: bold;
+  text-align: right;
+}
+/* line 65, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_simple.scss */
+.unicode-table .top-numbers > .v-ruler {
+  height: 22px;
+}
+/* line 67, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_simple.scss */
+.unicode-table .left-numbers {
+  vertical-align: middle;
+  font-size: 16px;
+  width: 65px;
+  border-right: solid 1px #404040;
+  float: left;
+  margin: 23px 0;
+  text-align: right;
+  position: relative;
+  z-index: 25;
+}
+/* line 78, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_simple.scss */
+.unicode-table .matrix {
+  padding: 0;
+  margin: 23px 0;
+  list-style: none;
+  float: left;
+  text-align: center;
+  width: 1101px;
+  position: relative;
+  z-index: 20;
+}
+/* line 87, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_simple.scss */
+.unicode-table .matrix > li {
+  vertical-align: middle;
+  width: 22px;
+  float: left;
+}
+/* line 93, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_simple.scss */
+.unicode-table .pagination {
+  background: white;
+  clear: left;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: fixed;
+  bottom: 0;
+  z-index: 30;
+  border-top: solid 1px #404040;
+  overflow: hidden;
+  min-width: 1101px;
+  width: 100%;
+}
+/* line 106, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_simple.scss */
+.unicode-table .pagination > li {
+  font-size: 16px;
+  vertical-align: middle;
+  float: left;
+  text-align: center;
+  line-height: 22px;
+  height: 22px;
+  padding: 0 5px;
+}
+/* line 114, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_simple.scss */
+.unicode-table .pagination > li.first {
+  width: 65px;
+  border-right: solid 1px #404040;
+  text-align: right;
+  padding: 0;
+}
+/* line 119, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_simple.scss */
+.unicode-table .pagination > li.first a {
+  color: #00C61D;
+  font-size: 20px;
+  line-height: 22px;
+  text-decoration: none;
+}
+
+/* line 129, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_simple.scss */
+.h-ruler, .v-ruler {
+  position: fixed;
+  width: 22px;
+  height: 22px;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  background-color: #D1FFD4;
+}
+/* line 137, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_simple.scss */
+.h-ruler.disabled, .v-ruler.disabled {
+  background: white;
+}
+
+/* line 141, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_simple.scss */
+.h-ruler {
+  width: 100%;
+}
+
+/* line 142, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_simple.scss */
+.v-ruler {
+  height: 100%;
+}

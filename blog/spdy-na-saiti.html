@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Поставив SPDY на сайт</title>
+<meta content="Поставив SPDY на сайт" itemprop="description" property="og:title">
+<meta content="Розповідь про те, як я ставив SPDY для lukom.org, і настроював RoR, Nginx та SSL" itemprop="name" name="description" property="og:description">
+<meta content="http://lukom.org/blog/spdy-na-saiti" property="og:url">
+<meta content="http://lukom.org/system/blog-images/google-spdy.jpg" property="og:image">
+<meta content="article" property="og:type">
+<meta content="100001353345404" property="fb:admins">
+<meta content="143733555820368" property="fb:app_id">
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="Hl5SOlZbV6jTmeUB/nlpgD1h8hIQgEbQDKo3f3XGBPgENn8WR+IdCmzMup9UGmwCvGL68XhgGc3MJvzyob9x6g==" />
+<link href="/rss.xml" rel="alternate" title="Найсвіжіші новини на Lukom.Org" type="application/rss+xml">
+<link href="/favicon.ico" rel="shortcut icon">
+<link href="http://lukom.org/blog/spdy-na-saiti" rel="canonical">
+<link rel="stylesheet" media="all" href="/assets/application-62b843cdf11b7d1c3ec4770e46cf10db6ab85cce990700bd6f2bdcb79a5821e8.css" />
+
+
+<script src="/assets/application-d74f2472fca0149ef13a2494ca651a42cabe54050dbec767cf4fca412ec93b3f.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-19834031-1', 'lukom.org');
+  ga('send', 'pageview');
+</script>
+
+<script async="async" src="https://apis.google.com/js/platform.js">
+{lang: 'uk'}
+</script>
+
+</head>
+<body>
+<div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=143733555820368";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+<div class="header-toolbar">
+<div class="page-wrap">
+<ul>
+<li><a href="/">Головна</a></li>
+<li><a href="/pages/author">Автор</a></li>
+</ul>
+</div>
+</div>
+<div class="header">
+<div class="page-wrap">
+<div class="logo">
+<div class="logo-text">Вперед і вгору!</div>
+<div class="logo-subtext">блог Лукома</div>
+</div>
+<div class="about-author">
+<div class="author-speak">
+Привіт, мене звати Лев Лукомський
+<br/> я займаюсь розробкою веб-сайтів та ігор
+<br/> ..і записую в блог все що взбреде в голову :)
+<a href="/pages/author">Автор</a>
+</div>
+<div class="follow-links">
+<a class="rss-big-link" target="_blank" href="/rss.xml">RSS</a>
+</div>
+<div class="contacts-links">
+<a title="Джмейл" class="gmail ico" href="mailto:lllukom@gmail.com">Gmail</a>
+<a title="Цукердрук" class="facebook ico" target="_blank" href="https://www.facebook.com/llukomsky">Facebook</a>
+<a title="Ґуґлоплюсик" class="gplus ico" target="_blank" href="https://plus.google.com/+%D0%9B%D0%B5%D0%B2%D0%9B%D1%83%D0%BA%D0%BE%D0%BC%D1%81%D1%8C%D0%BA%D0%B8%D0%B9">Google Plus</a>
+</div>
+</div>
+</div>
+</div>
+<div class="main-menu">
+<div class="page-wrap">
+<ul>
+<li><a href="/category/rozrobka">Розробка (22)</a></li>
+<li><a href="/category/rizne">Різне (52)</a></li>
+<li><a href="/category/tsikavynky">Цікавинки (12)</a></li>
+<li><a href="/category/veseloshchi">Веселощі (14)</a></li>
+<li>
+<a href="/category/novyny-saitu">Новини сайту</a>
+</li>
+</ul>
+</div>
+</div>
+
+<div class="torso">
+<div class="page-wrap">
+<div class="page-content">
+<div class="flash-messages">
+</div>
+
+<div class="box main-box post rozrobka">
+<h1 class="box-title">Поставив SPDY на сайт</h1>
+<div class="box-content">
+<div class="post-meta">
+<span class="link category-link">
+<a href="/category/rozrobka">Розробка</a>
+</span>
+<span class="link tag-link">Програмування, Досвід, Браузери, Веб-розробка, Оптимізація, RoR</span>
+<span class="link date-link">2014.05.22</span>
+<span class="link edited-link">Відредаговано: 2016.05.15</span>
+</div>
+<div class="post-content"><div class="box-images"><img alt="" src="/system/blog-images/google-spdy.jpg" style="height:200px; width:200px" /></div>
+
+<p>Вирішив додати на свій сайт&nbsp;<a class="external" href="http://uk.wikipedia.org/wiki/SPDY" style="background-color: rgb(255, 255, 255);" target="_blank">SPDY</a>&nbsp;&ndash; новий швидший протокол, заміна HTTP.&nbsp;Намучився, але таки поставив, ділюсь досвідом :).</p>
+
+<p><a class="external" href="http://caniuse.com/spdy" target="_blank">Підтримують SPDY</a> вже всі нормальні браузери, крім сафарі - а значить можна сміло юзати.</p>
+
+<p>Виявилось, що&nbsp;<strong>для SPDY потрібен SSL</strong>, тобто щоб сайт працював по HTTPS. Плюс в тому що ніби-то <strong>сайт вважається безпечним</strong> і біля нього тепер стоїть іконка колодки, а головний мінус в тому, що <strong>швидкість завантаження сторінок менша в 2 рази</strong>, за рахунок криптування всіх даних, правда із спіді швидкість мала б збільшитись.</p>
+
+<p>Щоб поставити SSL&nbsp;зареєструвався на <a class="external" href="https://www.startssl.com/" target="_blank">StartSSL</a>&nbsp;і згенерував собі ключі, видали мені безплатно сертифікат для lukom.org, правда якщо захочу його перегенерувати то доведеться вже гроші платити, такий от там безплатний сир в мишоловці..</p>
+
+<p>Потім попарився з настройкою Nginx - для того щоб підтримувався найостанніший SPDY 3.1 потрібен Nginx &gt; 1.5, та ще й скомпілений із новим <a class="external" href="http://uk.wikipedia.org/wiki/OpenSSL" target="_blank">OpenSSL</a>, який не вразливий на <a class="external" href="http://uk.wikipedia.org/wiki/Heartbleed" target="_blank">HeartBleed</a>, і спеціальною опцією <em>--with-http_spdy_module</em>. Для цього обновив Nginx із джему Passenger`а, згрубша десь так:</p>
+
+<div class="code">gem install passenger<br />
+rvmsudo passenger-install-nginx-module<br />
+vim /etc/init.d/nginx # see https://github.com/JasonGiedymin/nginx-init-ubuntu<br />
+chmod +x nginx<br />
+/etc/init.d/nginx start</div>
+
+<p>І потім зібрав&nbsp;Nginx з підтримкою SPDY. Прописав настройки:</p>
+
+<div class="code">server {<br />
+&nbsp;&nbsp;listen 80;<br />
+&nbsp;&nbsp;listen 443 default_server ssl spdy;<br />
+&nbsp;&nbsp;ssl_certificate /root/ssl/lukom.org_chain.pem;<br />
+&nbsp;&nbsp;ssl_certificate_key /root/ssl/lukom.org.key;<br />
+}</div>
+
+<p>Також, оскільки мій сайт на RoR, додав в <em>production.rb</em> наступне:</p>
+
+<div class="code">config.force_ssl = true</div>
+
+<p>Щоб сайт редіректило по-замовчуванню з http на https.</p>
+
+<p>І ура, SPDY працює! Це можна перевірити на <a class="external" href="http://spdycheck.org/" target="_blank">SpdyCheck.org</a>, або поставити <a class="external" href="https://chrome.google.com/webstore/detail/spdy-indicator/mpbpobfflnpcgagjijhmgnchggcjblin" target="_blank">SPDY Indicator</a> для хрома, або додавши таку штуку в конфіги Nginx:</p>
+
+<div class="code">location /spdy {<br />
+&nbsp;&nbsp;return 200 $spdy;<br />
+}</div>
+
+<p>Після цього виплили деякі нюанси - якщо на сторінці є якісь ресурси, в яких лінк починається на &laquo;http://&raquo; то іконка сайту в адресному рядку стає із знаком оклику, і в консоль хрома пишуться адреси ресурсів які завантажуються не по https. В мене такі проблеми були з Google Custom Search та з картинками лічильників. З гуглівським пошуком довелось просто оновити код, а от для лічильників довелось писати проксі:</p>
+
+<div class="code">def topua_rating_img<br />
+&nbsp;&nbsp;proxy_image(&#39;http://top.topua.net/counter.php?site=36&amp;t=5&amp;c=1&#39;, false)<br />
+end<br />
+def topua_bloggers_img<br />
+&nbsp;&nbsp;proxy_image(&#39;http://top.blog.net.ua/tracker.php?do=in&amp;amp;id=457&#39;, false)<br />
+end<br />
+def feedburner_img<br />
+&nbsp;&nbsp;proxy_image(&#39;http://feeds.feedburner.com/~fc/lukomorg?anim=0&#39;, true)<br />
+end<br />
+<br />
+private<br />
+<br />
+def proxy_image(url, caching)<br />
+&nbsp;&nbsp;image = Net::HTTP.get_response(URI url)<br />
+&nbsp;&nbsp;if caching<br />
+&nbsp;&nbsp; &nbsp;response.headers[&#39;Expires&#39;] = 1.day.from_now.httpdate<br />
+&nbsp;&nbsp;else<br />
+&nbsp;&nbsp; &nbsp;response.headers[&#39;Cache-Control&#39;] = &#39;no-cache, no-store, max-age=0, must-revalidate&#39;<br />
+&nbsp;&nbsp; &nbsp;response.headers[&#39;Pragma&#39;] = &#39;no-cache&#39;<br />
+&nbsp;&nbsp; &nbsp;response.headers[&#39;Expires&#39;] = &#39;Fri, 01 Jan 1990 00:00:00 GMT&#39;<br />
+&nbsp; end<br />
+&nbsp;&nbsp;send_data image.body, type: image.content_type, disposition: &#39;inline&#39;<br />
+end</div>
+
+<p>От і все, сайт на супер-нових технологіях, блищить і сяє :)</p>
+</div>
+<div class="social-buttons">
+<div class="fb-like" data-layout="button_count" data-send="false" data-width="120"></div>
+<a class="twitter-share-button" data-hashtags="lukomorg" data-lang="uk" data-text="Поставив SPDY на сайт" data-url="http://lukom.org/blog/spdy-na-saiti" href="https://twitter.com/share">Tweet</a>
+<div class="g-plusone" data-annotation="bubble" data-size="medium" data-width="120"></div>
+<script>
+  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+  if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
+  fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+  
+  window.___gcfg = {lang: 'uk'};
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+</div>
+
+<div id="related_posts">
+<div class="h2">Читайте також</div>
+<ul>
+<li><a href="/blog/css3-vzhe-siohodni">CSS3 вже сьогодні</a></li>
+<li><a href="/blog/styli-dlia-ie">Підхід до написання стилів для IE</a></li>
+<li><a href="/blog/spam-defence">Захист від спаму без капчі</a></li>
+<li><a href="/blog/devdays2008">Дні розробника 2008</a></li>
+<li><a href="/blog/msvitu">Ділюся досвідом після розробки msvitu.com</a></li>
+</ul>
+</div>
+<div id="comments">
+<div class="comments" id="comments_entries">
+<div class="h2" style="display:none">Коментарі (<span>0</span>)</div>
+</div>
+</div>
+
+<div class="fb-comments" data-href="http://lukom.org/blog/spdy-na-saiti" data-num-posts="5" data-width="510"></div>
+</div>
+</div>
+
+</div>
+<div class="primary-sidebar">
+<div class="box">
+<div class="box-title">Деякі дописи</div>
+<div class="box-content">
+<ul>
+<li><a href="/blog/hexabble">Гексабл</a></li>
+<li><a href="/blog/country-flags">Прапорці</a></li>
+<li><a href="/blog/kalendaryk-pynaryk">Календарик</a></li>
+<li><a href="/blog/months">Шпаргалка місяців</a></li>
+<li><a target="_blank" href="simple-pages/utf8-table/1">Таблиця utf-8</a></li>
+<li><a href="/blog/prykoly-skaipu">Приколи скайпу</a></li>
+<li><a href="/blog/dovhi-anekdoty">Довгі анекдоти</a></li>
+<li><a href="/blog/two-plus-two">2 + 2 = 5</a></li>
+<li><a href="/blog/usi-trykutnyky-odynakovi">Однакові △</a></li>
+</ul>
+</div>
+</div>
+<div class="box">
+<div class="box-title">Сторінки</div>
+<div class="box-content">
+<ul>
+<li><a href="/pages/takaboni/1">Такабоні</a></li>
+<li><a href="/pages/archive">Архів</a></li>
+</ul>
+</div>
+</div>
+<div class="box">
+<div class="box-title">Цікаві сайти</div>
+<div class="box-content">
+<ul>
+<li><a title="Українізація чужизмів" target="_blank" class="external" href="http://slovotvir.org.ua">Словотвір</a></li>
+<li><a title="Український цитатник" target="_blank" class="external" href="http://ukrbash.org/">УкрБаш</a></li>
+<li><a title="Український торент-трекер" target="_blank" class="external" href="http://hurtom.com/">Гуртом</a></li>
+</ul>
+
+</div>
+</div>
+<div class="box counters">
+<div class="box-title">Подобається? Плюсуйте!</div>
+<div class="box-content">
+<div class="g-page" data-href="https://plus.google.com/106462298861442752735" data-rel="publisher" data-showcoverphoto="false" data-showtagline="false" data-width="215"></div>
+</div>
+</div>
+
+
+</div>
+</div>
+</div>
+<div class="footer">
+<div class="page-wrap">
+<div class="col">
+<div class="footer-title">Останні дописи</div>
+<ul>
+<li><a href="/blog/site-news-100">Новини сайту 100</a></li>
+<li><a href="/blog/site-news-100">Новини сайту 100</a></li>
+<li><a href="/blog/usi-vybory-nechesni">Усі вибори нечесні</a></li>
+<li><a href="/blog/suchasni-puzomirky">Сучасні пузомірки</a></li>
+<li><a href="/blog/spdy-na-saiti">Поставив SPDY на сайт</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+</body>
+</html>

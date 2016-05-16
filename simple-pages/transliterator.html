@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Транслітератор Лукома</title>
+<link href="/rss.xml" rel="alternate" title="Усі найсвіжіші новини на Lukom.Org" type="application/rss+xml">
+<link href="/favicon.ico" rel="shortcut icon">
+<link href="http://lukom.org/simple-pages/utf8-table" rel="canonical">
+<link rel="stylesheet" media="screen" href="/assets/simple-c43a4e7e168a2c04a37caa8ea27136cdbfb0764fa14d8073aa47e0f7ef71bde8.css" />
+<style type="text/css">
+body {
+    padding: 15px;
+}
+.trans-table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 1px solid gray;
+}
+.trans-table input {
+    border-style: hidden;
+    width: 22px;
+}
+</style>
+
+<script src="/assets/simple-312ee6c769a90710fd5472e94a4807cc9e7b9137641381f4e1874c4be93edfd9.js" debug="false"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-19834031-1', 'lukom.org');
+  ga('send', 'pageview');
+</script>
+
+
+</head>
+<body>
+<div class="content">
+
+<div class="center" style="padding-bottom: 1em"><img src="/system/blog-images/translit.png" width="127" height="117" alt="" /></div>
+
+<script type="text/javascript">
+    var g_dir;
+    function sortTranslit(a,b)
+    {
+        return b[g_dir].length - a[g_dir].length;
+    }
+    function transform(from, to, dir) {
+        g_dir = dir;
+        var text = document.getElementById(from).value;
+        var table = document.getElementById('trans_table');
+        var a1 = table.firstChild.childNodes[0].childNodes;
+        var a2 = table.firstChild.childNodes[1].childNodes;
+        var a = [];
+        for (var i = 0; i < a1.length; ++i) {
+            a[i] = [a1[i].firstChild.value, a2[i].firstChild.value];
+        }
+        a.sort(sortTranslit);
+        var res = [];
+
+        for (var pos = 0; pos < text.length;) {
+            var found = false;
+            for (var i = 0; i < a.length; ++i) {
+                var part = a[i][dir];
+                if (match(text, pos, part)) {
+                    pos += part.length;
+                    res.push(a[i][(dir + 1)%2]);
+                    found = true;
+                    break;
+                }
+            }
+            if (!found) {
+                res.push(text[pos]);
+                ++pos;
+            }
+        }
+
+        document.getElementById(to).value = res.join('');
+    }
+    function match(text, pos, part) {
+        if (text.length - pos < part.length || !part) {
+            return false;
+        }
+
+        for (var i = 0; i < part.length; ++i) {
+            if (text[pos + i] != part[i]) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+    function toggle(o) {
+        o.style.display = o.style.display == 'none' ? '' : 'none';
+    }
+    function use(t) {
+        var table = document.getElementById('trans_table');
+        var a1 = table.firstChild.childNodes[0].childNodes;
+        var a2 = table.firstChild.childNodes[1].childNodes;
+        var t1 = t.firstChild.childNodes[0].childNodes;
+        var t2 = t.firstChild.childNodes[1].childNodes;
+        for (var i = 0; i < a1.length; ++i) {
+            a1[i].firstChild.value = t1[i].innerHTML;
+            a2[i].firstChild.value = t2[i].innerHTML;
+        }
+    }
+</script>
+
+
+<b>Таблиця транслітерації (можна змінювати)</b>
+<table id="trans_table" class="trans-table"
+><tr
+><td><input type="text" value="а" /></td
+><td><input type="text" value="б" /></td
+><td><input type="text" value="в" /></td
+><td><input type="text" value="г" /></td
+><td><input type="text" value="ґ" /></td
+><td><input type="text" value="д" /></td
+><td><input type="text" value="е" /></td
+><td><input type="text" value="є" /></td
+><td><input type="text" value="ж" /></td
+><td><input type="text" value="з" /></td
+><td><input type="text" value="и" /></td
+><td><input type="text" value="i" /></td
+><td><input type="text" value="ї" /></td
+><td><input type="text" value="й" /></td
+><td><input type="text" value="к" /></td
+><td><input type="text" value="л" /></td
+><td><input type="text" value="м" /></td
+><td><input type="text" value="н" /></td
+><td><input type="text" value="о" /></td
+><td><input type="text" value="п" /></td
+><td><input type="text" value="р" /></td
+><td><input type="text" value="с" /></td
+><td><input type="text" value="т" /></td
+><td><input type="text" value="у" /></td
+><td><input type="text" value="ф" /></td
+><td><input type="text" value="х" /></td
+><td><input type="text" value="ц" /></td
+><td><input type="text" value="ч" /></td
+><td><input type="text" value="ш" /></td
+><td><input type="text" value="щ" /></td
+><td><input type="text" value="ь" /></td
+><td><input type="text" value="ю" /></td
+><td><input type="text" value="я" /></td
+><td><input type="text" value="'" /></td
+><td><input type="text" value="" /></td
+><td><input type="text" value="" /></td
+></tr
+><tr
+><td><input type="text" value="a" /></td
+><td><input type="text" value="b" /></td
+><td><input type="text" value="v" /></td
+><td><input type="text" value="h" /></td
+><td><input type="text" value="g" /></td
+><td><input type="text" value="d" /></td
+><td><input type="text" value="e" /></td
+><td><input type="text" value="ye" /></td
+><td><input type="text" value="zh" /></td
+><td><input type="text" value="z" /></td
+><td><input type="text" value="y" /></td
+><td><input type="text" value="i" /></td
+><td><input type="text" value="yi" /></td
+><td><input type="text" value="j" /></td
+><td><input type="text" value="k" /></td
+><td><input type="text" value="l" /></td
+><td><input type="text" value="m" /></td
+><td><input type="text" value="n" /></td
+><td><input type="text" value="o" /></td
+><td><input type="text" value="p" /></td
+><td><input type="text" value="r" /></td
+><td><input type="text" value="s" /></td
+><td><input type="text" value="t" /></td
+><td><input type="text" value="u" /></td
+><td><input type="text" value="f" /></td
+><td><input type="text" value="kh" /></td
+><td><input type="text" value="ts" /></td
+><td><input type="text" value="ch" /></td
+><td><input type="text" value="sh" /></td
+><td><input type="text" value="sch" /></td
+><td><input type="text" value="`" /></td
+><td><input type="text" value="yu" /></td
+><td><input type="text" value="ya" /></td
+><td><input type="text" value="'" /></td
+><td><input type="text" value="" /></td
+><td><input type="text" value="" /></td
+></tr
+></table>
+
+<p>&nbsp;</p>
+
+<table>
+  <tr>
+    <td>
+      <b>Українська</b>
+      <br /><textarea id="ukr" cols="58" rows="8"></textarea>
+    </td>
+    <td>
+      <button type="button" onclick="transform('ukr', 'translit', 0)">&gt;</button>
+      <br /><button type="button" onclick="transform('translit', 'ukr', 1)">&lt;</button>
+    </td>
+    <td>
+      <b>Translit</b>
+      <br /><textarea id="translit" cols="58" rows="8"></textarea>
+    </td>
+  </tr>
+</table>
+
+<p>&nbsp;</p>
+<h2>Інші транслітерації</h2>
+
+<a href="javascript:void(0)" onclick="toggle(this.nextSibling)">Звичайна</a
+><div style="display: none">
+  <table class="trans-table"
+  ><tr
+  ><td>а</td
+  ><td>б</td
+  ><td>в</td
+  ><td>г</td
+  ><td>ґ</td
+  ><td>д</td
+  ><td>е</td
+  ><td>є</td
+  ><td>ж</td
+  ><td>з</td
+  ><td>и</td
+  ><td>i</td
+  ><td>ї</td
+  ><td>й</td
+  ><td>к</td
+  ><td>л</td
+  ><td>м</td
+  ><td>н</td
+  ><td>о</td
+  ><td>п</td
+  ><td>р</td
+  ><td>с</td
+  ><td>т</td
+  ><td>у</td
+  ><td>ф</td
+  ><td>х</td
+  ><td>ц</td
+  ><td>ч</td
+  ><td>ш</td
+  ><td>щ</td
+  ><td>ь</td
+  ><td>ю</td
+  ><td>я</td
+  ><td>'</td
+  ><td></td
+  ><td></td
+  ></tr
+  ><tr
+  ><td>a</td
+  ><td>b</td
+  ><td>v</td
+  ><td>h</td
+  ><td>g</td
+  ><td>d</td
+  ><td>e</td
+  ><td>ye</td
+  ><td>zh</td
+  ><td>z</td
+  ><td>y</td
+  ><td>i</td
+  ><td>yi</td
+  ><td>j</td
+  ><td>k</td
+  ><td>l</td
+  ><td>m</td
+  ><td>n</td
+  ><td>o</td
+  ><td>p</td
+  ><td>r</td
+  ><td>s</td
+  ><td>t</td
+  ><td>u</td
+  ><td>f</td
+  ><td>kh</td
+  ><td>ts</td
+  ><td>ch</td
+  ><td>sh</td
+  ><td>sch</td
+  ><td>`</td
+  ><td>yu</td
+  ><td>ya</td
+  ><td>'</td
+  ><td></td
+  ><td></td
+  ></tr
+  ></table
+  ><button type="button" onclick="use(this.previousSibling)">Підставити</button>
+</div>
+<br /><a href="javascript:void(0)" onclick="toggle(this.nextSibling)">Студентська</a
+><div style="display: none">
+  <table class="trans-table"
+  ><tr
+  ><td>а</td
+  ><td>б</td
+  ><td>в</td
+  ><td>г</td
+  ><td>ґ</td
+  ><td>д</td
+  ><td>е</td
+  ><td>є</td
+  ><td>ж</td
+  ><td>з</td
+  ><td>и</td
+  ><td>i</td
+  ><td>ї</td
+  ><td>й</td
+  ><td>к</td
+  ><td>л</td
+  ><td>м</td
+  ><td>н</td
+  ><td>о</td
+  ><td>п</td
+  ><td>р</td
+  ><td>с</td
+  ><td>т</td
+  ><td>у</td
+  ><td>ф</td
+  ><td>х</td
+  ><td>ц</td
+  ><td>ч</td
+  ><td>ш</td
+  ><td>щ</td
+  ><td>ь</td
+  ><td>ю</td
+  ><td>я</td
+  ><td>'</td
+  ><td></td
+  ><td></td
+  ></tr
+  ><tr
+  ><td>a</td
+  ><td>b</td
+  ><td>v</td
+  ><td>h</td
+  ><td>g</td
+  ><td>d</td
+  ><td>e</td
+  ><td>je</td
+  ><td>*</td
+  ><td>z</td
+  ><td>u</td
+  ><td>i</td
+  ><td>ji</td
+  ><td>j</td
+  ><td>k</td
+  ><td>l</td
+  ><td>m</td
+  ><td>n</td
+  ><td>o</td
+  ><td>p</td
+  ><td>r</td
+  ><td>s</td
+  ><td>t</td
+  ><td>y</td
+  ><td>f</td
+  ><td>x</td
+  ><td>c</td
+  ><td>4</td
+  ><td>w</td
+  ><td>w4</td
+  ><td></td
+  ><td>ju</td
+  ><td>9</td
+  ><td></td
+  ><td></td
+  ><td></td
+  ></tr
+  ></table
+  ><button type="button" onclick="use(this.previousSibling)">Підставити</button>
+</div>
+
+<p>&nbsp;</p>
+
+<h2>Що це?</h2>
+<p>
+  Тут можна перевести кирилицю в трансліт і навпаки за допомогою таблиці транслітерації.
+  Причому таблицю транслітерації ви можете змінювати <b>на ваш смак</b>, або скористатись готовими табличками.
+  Треба нові таблички? - пишіть в коменти, додам.
+</p>
+<p>
+  Я замітив, що <a href="/blog/transliteration">невелика стаття про транслітерацію</a>, яку я колись публікував, користується попитом.
+  Я подумав, що багато людей, заходячи на ту сторінку, хотіли б перевести текст укр-translit-укр.
+  Я пошукав в інтернеті транслітератори, знайшов декілька, але одна біда з ними - в них зашиті таблиці транслітерації,
+  тому неможливо їх змінити і щоб транслітерація відбувалась за твоїм смаком. Внаслідок чого і виникла дана сторінка.
+  Вибачайте за дизайн, я це написав за декілька годин, але якщо люди будуть користуватись, то, звісно, перероблю ;)
+</p>
+
+</div>
+</body>
+</html>
