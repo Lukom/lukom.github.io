@@ -5,11 +5,18 @@
     <description>Усі найсвіжіші новини</description>
     <rss_url/>
     <item>
-      <title>Новини сайту 100</title>
-      <description>&lt;p&gt;Набридло мені платити за Linode VPS хостинг, і вирішив я захостити свій сайт нахаляву &amp;mdash; вже ж 21 століття, мають бути такі варіанти! Спробував я залити на &lt;strong&gt;Heroku&lt;/strong&gt;. І тут я дізнався страшну правду &amp;mdash; там є обмеження по кількості який твій сайт може перебувати онлайн, здається лише 18 годин в день.&lt;/p&gt; &lt;p&gt;Я думав-думав і придумав &amp;mdash; скомпілюю-но я сайт у статичні ресурси і покладу на &lt;strong&gt;Github Pages&lt;/strong&gt;, а великі ресурси покладу на &lt;strong&gt;Dropbox&lt;/strong&gt; і буду давати на них завантажувальні посилання. І на диво все вийшло гладко &amp;mdash; за день все зробив, навіть передивився сайт і полагодив биті посилання і повидаляв старі дописи.&lt;/p&gt; &lt;p&gt;Так що сайт тепер буде собі жити без зайвих витрат з мого боку &amp;mdash; чудово! :)&lt;/p&gt;&lt;a href="/blog/site-news-100"&gt;Читати далі&lt;/a&gt;</description>
+      <title>Новорічні резолюції — відродження блогу</title>
+      <description>&lt;div class="box-images"&gt;&lt;img alt="З Новим 2022 Роком!!!" src="http://lukom.org/system/blog-images/2022/z-novym-2022-rokom.png" style="height:247px; width:380px" /&gt;&lt;/div&gt; &lt;p&gt;Настав 2022 рік, задумався я щоб я хотів такого у цьому році &amp;mdash; і згадав, що колись я був крутим перцем, і вів блог, але потім загнилив і закинув. Тож цього року я поставив за ціль &amp;mdash; &lt;strong&gt;відродити мій щоденник&lt;/strong&gt;  і спробую дописувати сюди Часто. Хочу трохи більше оцифрувати моє життя і досвід, поділитись усім що накопичилось, єй!  Можна було б це робити на Facebook, що набагато легше, але хочу щоб воно ґуґлилось.&lt;/p&gt; &lt;p&gt;Клятий раціоналіст та Єбаут ютуб канали кажуть що новорічні резолюції це пшик, ну і хай собі кажуть, а я думаю що це хороша ідея.&lt;/p&gt; &lt;p&gt;Іншою моєю ціллю на цей рік буде &amp;mdash; &lt;strong&gt;більше планування&lt;/strong&gt;. Останні роки без особливого планування були чудовими, та в плані моїх особистих досягнень вони були, чесно, такє-собі. Цей рік хочу встигнути зробити більше!&lt;/p&gt;&lt;a href="/blog/vidrodzhennia-blohu"&gt;Читати далі&lt;/a&gt;</description>
+      <pubDate>Sat, 01 Jan 2022 20:40:50 +0000</pubDate>
+      <link>http://localhost:3009/blog/vidrodzhennia-blohu</link>
+      <guid>http://localhost:3009/blog/vidrodzhennia-blohu</guid>
+    </item>
+    <item>
+      <title>Новини сайту 101</title>
+      <description>&lt;p&gt;Набридло мені платити за Linode VPS хостинг, і вирішив я захостити свій сайт нахаляву &amp;mdash; вже ж 21 століття, мають бути такі варіанти! Спробував я залити на &lt;strong&gt;Heroku&lt;/strong&gt;. І тут я дізнався страшну правду &amp;mdash; там є обмеження по кількості який твій сайт може перебувати онлайн, здається лише 18 годин в день.&lt;/p&gt; &lt;p&gt;Я думав-думав і придумав &amp;mdash; скомпілюю-но я сайт у статичні ресурси і покладу на &lt;strong&gt;Github Pages&lt;/strong&gt;, а великі ресурси покладу на &lt;strong&gt;Dropbox&lt;/strong&gt; і буду давати на них завантажувальні посилання. І на диво все вийшло гладко &amp;mdash; за день все зробив, навіть передивився сайт і полагодив биті посилання і повидаляв старі дописи.&lt;/p&gt; &lt;p&gt;Так що сайт тепер буде собі жити без зайвих витрат з мого боку &amp;mdash; чудово! :)&lt;/p&gt;&lt;a href="/blog/site-news-101"&gt;Читати далі&lt;/a&gt;</description>
       <pubDate>Sun, 15 May 2016 23:16:11 +0000</pubDate>
-      <link>http://localhost:3009/blog/site-news-100</link>
-      <guid>http://localhost:3009/blog/site-news-100</guid>
+      <link>http://localhost:3009/blog/site-news-101</link>
+      <guid>http://localhost:3009/blog/site-news-101</guid>
     </item>
     <item>
       <title>Новини сайту 100</title>
@@ -66,13 +73,6 @@
       <pubDate>Sat, 10 May 2014 22:02:50 +0000</pubDate>
       <link>http://localhost:3009/blog/descent-cheats</link>
       <guid>http://localhost:3009/blog/descent-cheats</guid>
-    </item>
-    <item>
-      <title>Гексабл</title>
-      <description>&lt;div class="box-images"&gt;&lt;a class="preview-image" href="/system/blog-images/hexabble-board.png"&gt;&lt;img alt="Гексабл дошка" class="photo-image" src="/system/blog-images/hexabble-board-mini.png" style="height:160px; width:160px" /&gt;&lt;/a&gt;&lt;/div&gt; &lt;p&gt;Любите скрабл і хочете чогось новенького? Тоді ви прийли за правильною адресою :) Не секрет, що я фанат скраблу :) ..І ми з дівчиною придумали нову гру - Скрабл на гексагонатиці, або просто &lt;strong&gt;Гексабл&lt;/strong&gt;.&lt;/p&gt; &lt;p&gt;&amp;nbsp;&lt;/p&gt; &lt;p&gt;Правила такі ж як у звичайному скраблі, просто додається ще 1 вимір. Можна хіба ввести правило що слова можна складати не тільки зліва-направо, а в будь-якому напрямку, бо докладати слова до вже існуючих в гексаблі значно важче ніж в класиці.&lt;/p&gt; &lt;p&gt;&amp;nbsp;&lt;/p&gt; &lt;p&gt;Зацікавились? :) Тоді ось вам матеріали для самостійного роздруку гри:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;a class="model-link" href="https://dl.dropbox.com/s/3tynlmk3s0vdmtf/hexabble-tile.stl"&gt;Модель плитки&lt;/a&gt;. Роздрукуйте на 3D-роздруку у вашому місті&lt;/li&gt; &lt;li&gt;&lt;a class="cdr-link" href="https://dl.dropbox.com/s/h0to1uh3l3vppco/hexabble-board.cdr" title="Формат CorelDraw X6"&gt;Дошка&lt;/a&gt;. Роздрукуйте на грубому папері&lt;/li&gt; &lt;li&gt;&lt;a class="cdr-link" href="https://dl.dropbox.com/s/axuwskuq62betdq/hexabble-letters.cdr" title="Формат CorelDraw X6"&gt;Наклейки букв для плиток&lt;/a&gt;. Роздрукуйте на папері-самоклейці&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;Ось так вийшло в нас:&lt;/p&gt; &lt;div class="box-images"&gt;&lt;a class="preview-image" href="/system/blog-images/hexabble-prototype-1.jpg" rel="hexabble" title="Ранній паперовий прототип"&gt;&lt;img alt="Перший паперовий прототип" src="/system/blog-images/hexabble-prototype-1-mini.jpg" style="height:100px; width:87px" /&gt;&lt;/a&gt;&lt;a class="preview-image" href="/system/blog-images/double-scrabble.jpg" rel="hexabble" title="Дабл-скрабл (2 гравці - 2 мішечки)"&gt;&lt;img alt="Дабл-скрабл" src="/system/blog-images/double-scrabble-mini.jpg" style="height:100px; width:100px" /&gt;&lt;/a&gt;&lt;a class="preview-image" href="/system/blog-images/hexabble-ready.jpg" rel="hexabble" title="Гексабл готовий до гри"&gt;&lt;img alt="Гексабл" src="/system/blog-images/hexabble-ready-mini.jpg" style="height:100px; width:133px" /&gt;&lt;/a&gt;&lt;a class="preview-image" href="/system/blog-images/hexabble-gameplay.jpg" rel="hexabble" title="Завершена партія"&gt;&lt;img alt="" src="http://lukom.org/system/blog-images/hexabble-gameplay-mini.jpg" style="height:100px; width:157px" /&gt;&lt;/a&gt;&lt;/div&gt; &lt;p&gt;Гарної забави!&lt;/p&gt;&lt;a href="/blog/hexabble"&gt;Читати далі&lt;/a&gt;</description>
-      <pubDate>Sat, 10 May 2014 21:26:36 +0000</pubDate>
-      <link>http://localhost:3009/blog/hexabble</link>
-      <guid>http://localhost:3009/blog/hexabble</guid>
     </item>
   </channel>
 </rss>
