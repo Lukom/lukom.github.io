@@ -1,0 +1,178 @@
+/* line 10, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/codes_table.scss */
+body {
+  color: #404040;
+  font: 20px/20px sans-serif;
+}
+
+/* line 14, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/codes_table.scss */
+a {
+  color: #0069D6;
+  text-decoration: none;
+}
+/* line 17, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/codes_table.scss */
+a:hover {
+  color: #00438A;
+  text-decoration: underline;
+}
+
+/* line 23, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/codes_table.scss */
+.content {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 28, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/codes_table.scss */
+.matrix {
+  position: relative;
+  width: 100%;
+  margin-top: calc(1em + 30px);
+}
+
+/* line 33, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/codes_table.scss */
+.codes-table {
+  width: 100%;
+  table-layout: fixed;
+  border-spacing: 0;
+  margin-top: 3px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+/* line 42, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/codes_table.scss */
+.codes-table th {
+  font-family: monospace;
+  white-space: nowrap;
+  word-spacing: -6px;
+}
+/* line 47, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/codes_table.scss */
+.codes-table th:first-child {
+  text-align: right;
+  direction: rtl;
+}
+/* line 50, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/codes_table.scss */
+.codes-table th:first-child::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+}
+/* line 58, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/codes_table.scss */
+.codes-table td {
+  position: relative;
+  cursor: default;
+}
+/* line 62, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/codes_table.scss */
+.codes-table td .char-text {
+  position: static;
+  transform: none;
+  box-shadow: none;
+  background: transparent;
+}
+/* line 68, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/codes_table.scss */
+.codes-table td .char-code {
+  display: none;
+}
+/* line 72, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/codes_table.scss */
+.codes-table td:hover {
+  color: black;
+  z-index: 21;
+  text-shadow: 0 0 2px limegreen;
+}
+/* line 78, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/codes_table.scss */
+.codes-table .selected {
+  z-index: 20;
+  cursor: unset;
+}
+/* line 82, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/codes_table.scss */
+.codes-table .selected .char-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border: 2px solid lightgray;
+  font-size: 66px;
+  line-height: 66px;
+  padding: 20px 30px;
+  text-shadow: 2px 2px white, -2px -2px white, 2px -2px white, -2px 2px white;
+}
+/* line 94, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/codes_table.scss */
+.codes-table .selected .char-code {
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: -39px;
+  transform: translate(-50%, 0);
+  font-size: 12px;
+  line-height: 12px;
+  color: gray;
+  padding: 3px 5px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.5);
+  border-radius: 3px;
+  text-shadow: none;
+  white-space: nowrap;
+  word-spacing: -1px;
+}
+
+/* line 113, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/codes_table.scss */
+.top-numbers {
+  position: fixed;
+  z-index: 10;
+  background: white;
+  border-bottom: solid 1px #404040;
+  top: 0;
+  width: 1000px;
+  display: flex;
+}
+/* line 121, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/codes_table.scss */
+.top-numbers th {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+/* line 125, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/codes_table.scss */
+.top-numbers th:first-child {
+  flex: 2;
+}
+
+/* line 128, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/codes_table.scss */
+.pagination {
+  width: 1000px;
+  margin: 1em auto;
+  line-height: 1.5;
+}
+
+/* line 134, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/codes_table.scss */
+.h-ruler, .v-ruler {
+  position: absolute;
+  z-index: 0;
+  background-color: #eeffef;
+}
+
+/* line 139, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/codes_table.scss */
+.h-ruler {
+  width: 100%;
+  left: 0;
+}
+
+/* line 140, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/codes_table.scss */
+.v-ruler {
+  height: 100%;
+  top: 0;
+}
+
+/* line 143, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/codes_table.scss */
+.page-special {
+  color: darkorange;
+}
+
+/* line 144, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/codes_table.scss */
+.page-stubs {
+  color: dimgray;
+}
+
+/* line 145, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/codes_table.scss */
+.page-blank {
+  color: lightgray;
+}

@@ -5,6 +5,13 @@
     <description>Усі найсвіжіші новини</description>
     <rss_url/>
     <item>
+      <title>Таблиця UTF8 та цікаві знахідки</title>
+      <description>&lt;div class="box-images"&gt;&lt;img alt="utf8 таблиця" src="http://lukom.org/system/blog-images/2022/utf8-table-view.png" /&gt;&lt;/div&gt; &lt;p&gt;Колись я був згенерував &lt;a href="/simple-pages/unicode-table/1"&gt;таблицю Юнікоду&lt;/a&gt;, я тоді думав що згенерував UTF8 таблицю (бо ж там усі символи, так?), так то воно так, але трохи не так &amp;mdash; це різні штуки. Посидівши останніми днями я трохи розібрався у цьому питанні, покращив стару таблицю та створив таблицю &lt;a href="/simple-pages/utf8-table/1/1"&gt;UTF-8 символів&lt;/a&gt;, з окремими сторінками по байтах.&lt;/p&gt; &lt;p&gt;То ж яка різниця між Юнікодом та UTF-8? Виявляється що &lt;a href="https://uk.wikipedia.org/wiki/%D0%AE%D0%BD%D1%96%D0%BA%D0%BE%D0%B4"&gt;Юнікод&lt;/a&gt; &amp;mdash; це просто перелічення всіх відомих символів, де кожен символ має номер (code point), 1, 2, 3, ..., 1.114.111. Усіх символів є &amp;lt; 2&lt;sup&gt;21&lt;/sup&gt;&amp;nbsp;і їх можна було б усіх вмістити в 3 байти, але ніт &amp;mdash; так історично склалось що юнікод не є кодуванням сам по собі, а використовує для цього інші кодування, як от UTF-8, який зараз є на 95% усіх сайтів.&lt;/p&gt; &lt;p&gt;&lt;a href="https://uk.wikipedia.org/wiki/UTF-8"&gt;UTF-8&lt;/a&gt; таблиця містить такі ж символи як таблиця Unicode, але різниця у розміщенні &amp;mdash; кожен символ передається одним, двома, трьома або 4-ма байтами:&lt;/p&gt; &lt;div class="code"&gt;1 байт &amp;mdash; 0xxxxxxx&lt;br /&gt; 2 байти &amp;mdash; 110xxxxx 10xxxxxx&lt;br /&gt; 3 байти &amp;mdash;&amp;nbsp;1110xxxx 10xxxxxx…&lt;/div&gt;&lt;a href="/blog/utf8-tablycia-ta-inshe"&gt;Читати далі&lt;/a&gt;</description>
+      <pubDate>Tue, 11 Jan 2022 01:15:39 +0000</pubDate>
+      <link>http://localhost:3009/blog/utf8-tablycia-ta-inshe</link>
+      <guid>http://localhost:3009/blog/utf8-tablycia-ta-inshe</guid>
+    </item>
+    <item>
       <title>Новорічні резолюції — відродження блогу</title>
       <description>&lt;div class="box-images"&gt;&lt;img alt="З Новим 2022 Роком!!!" src="http://lukom.org/system/blog-images/2022/z-novym-2022-rokom.png" style="height:247px; width:380px" /&gt;&lt;/div&gt; &lt;p&gt;Настав 2022 рік, задумався я щоб я хотів такого у цьому році &amp;mdash; і згадав, що колись я був крутим перцем, і вів блог, але потім загнилив і закинув. Тож цього року я поставив за ціль &amp;mdash; &lt;strong&gt;відродити мій щоденник&lt;/strong&gt;  і спробую дописувати сюди Часто. Хочу трохи більше оцифрувати моє життя і досвід, поділитись усім що накопичилось, єй!  Можна було б це робити на Facebook, що набагато легше, але хочу щоб воно ґуґлилось.&lt;/p&gt; &lt;p&gt;Клятий раціоналіст та Єбаут ютуб канали кажуть що новорічні резолюції це пшик, ну і хай собі кажуть, а я думаю що це хороша ідея.&lt;/p&gt; &lt;p&gt;Іншою моєю ціллю на цей рік буде &amp;mdash; &lt;strong&gt;більше планування&lt;/strong&gt;. Останні роки без особливого планування були чудовими, та в плані моїх особистих досягнень вони були, чесно, такє-собі. Цей рік хочу встигнути зробити більше!&lt;/p&gt;&lt;a href="/blog/vidrodzhennia-blohu"&gt;Читати далі&lt;/a&gt;</description>
       <pubDate>Sat, 01 Jan 2022 20:40:50 +0000</pubDate>
@@ -66,13 +73,6 @@
       <pubDate>Sat, 10 May 2014 22:46:45 +0000</pubDate>
       <link>http://localhost:3009/blog/country-flags</link>
       <guid>http://localhost:3009/blog/country-flags</guid>
-    </item>
-    <item>
-      <title>Шпаргалка з Descent</title>
-      <description>&lt;div class="box-images"&gt; &lt;img alt="Descent journeys in the dark" src="http://lukom.org/system/blog-images/descent-logo.png" style="width: 330px; height: 100px;"/&gt; &lt;/div&gt; &lt;p&gt; Захопились ми одною настільною грою - &lt;strong&gt;Descent journeys in the dark&lt;/strong&gt;, і оскільки хочеться подивитись які можливості має кожен герой - я зробив таку довідку: &lt;/p&gt; &lt;p&gt; &lt;a class="txt" href="/system/files/descent2e/heroes.htm" target="_blank"&gt;Шпаргалка по героях Descent&lt;/a&gt; &lt;/p&gt; &lt;p&gt; Можливо комусь ще згодиться. &lt;/p&gt;&lt;a href="/blog/descent-cheats"&gt;Читати далі&lt;/a&gt;</description>
-      <pubDate>Sat, 10 May 2014 22:02:50 +0000</pubDate>
-      <link>http://localhost:3009/blog/descent-cheats</link>
-      <guid>http://localhost:3009/blog/descent-cheats</guid>
     </item>
   </channel>
 </rss>
