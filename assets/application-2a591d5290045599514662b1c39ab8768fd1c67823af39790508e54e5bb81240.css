@@ -1,0 +1,1906 @@
+@charset "UTF-8";
+/* line 160, all-combined/*.png */
+.all-combined-sprite, #cboxTopLeft, #cboxTopRight, #cboxBottomLeft, #cboxBottomRight, #cboxPrevious, #cboxPrevious:hover, #cboxNext, #cboxNext:hover, #cboxClose, #cboxClose:hover, .author-speak a, .follow-links .rss-big-link:before, .contacts-links .ico.gmail:before, .contacts-links .ico.facebook:before, .link.category-link:before, .link.tag-link:before, .link.date-link:before, .link.comment-link:before, .link.edited-link:before, .pagination .prev a, .pagination .prev a:hover, .pagination .next a, .pagination .next a:hover {
+  background-image: url(/assets/all-combined-s9befb50b75-1c497cdd6e396b67a5a45e6156e4972b493aebadda014ffd9e67b3a8cc28c551.png);
+  background-repeat: no-repeat;
+}
+
+/* --------- Global styles --------- */
+/* line 4, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_global.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 8, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_global.scss */
+body {
+  background-color: #DFDFDF;
+  color: #5C5C5C;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  line-height: 130%;
+}
+
+/* line 15, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_global.scss */
+img {
+  border: 0;
+  font-size: 10px;
+  line-height: 10px;
+}
+
+/* line 20, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_global.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 23, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_global.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 27, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_global.scss */
+ul {
+  list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs%2B9AAAAxklEQVQYV22PrQqEQBhFv9ec1%2FEtDBaTzSBjM1kMBoMgNhF%2FQMVmEvnWMyjswgoHLvdcZhwpy1IezI290QcynfNSFAV4dV3ruq76fmQ6HBvJ89xUVaXHceh1XT%2FQ4dhIlmV2GAY9z%2FMvODaSpqlO06TjOOq2be4UINPh2Egcx9p1nfufr4c46HBsJIoi2zSN9n2vbdsqGch0ZDYShqFJksRdsyyLzvPsINPh2EgQBOBxPC%2Fc991BpsOxEd%2F3X8yNvdEHMp3zH72JQSbjlH5tAAAAAElFTkSuQmCC);
+  padding: 0 0 0 20px;
+  margin: 0;
+}
+
+/* line 33, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_global.scss */
+abbr {
+  color: #247CA5;
+}
+
+/*
+    Colorbox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+/* line 5, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/colorbox/_jquery.colorbox.scss */
+#colorbox, #cboxOverlay, #cboxWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+/* line 6, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/colorbox/_jquery.colorbox.scss */
+#cboxOverlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 7, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/colorbox/_jquery.colorbox.scss */
+#cboxMiddleLeft, #cboxBottomLeft {
+  clear: left;
+}
+
+/* line 8, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/colorbox/_jquery.colorbox.scss */
+#cboxContent {
+  position: relative;
+}
+
+/* line 9, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/colorbox/_jquery.colorbox.scss */
+#cboxLoadedContent {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* line 10, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/colorbox/_jquery.colorbox.scss */
+#cboxTitle {
+  margin: 0;
+}
+
+/* line 11, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/colorbox/_jquery.colorbox.scss */
+#cboxLoadingOverlay, #cboxLoadingGraphic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 12, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/colorbox/_jquery.colorbox.scss */
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow {
+  cursor: pointer;
+}
+
+/* line 13, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/colorbox/_jquery.colorbox.scss */
+.cboxPhoto {
+  float: left;
+  margin: auto;
+  border: 0;
+  display: block;
+  max-width: none;
+  -ms-interpolation-mode: bicubic;
+}
+
+/* line 14, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/colorbox/_jquery.colorbox.scss */
+.cboxIframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0;
+}
+
+/* line 15, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/colorbox/_jquery.colorbox.scss */
+#colorbox, #cboxContent, #cboxLoadedContent {
+  box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+}
+
+/* 
+    User Style:
+    Change the following styles to modify the appearance of Colorbox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+/* line 22, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/colorbox/_jquery.colorbox.scss */
+#cboxOverlay {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAAD1BMVEX%2F%2F%2F8HBwcICAgUFBQXFxf483%2FsAAAAOklEQVQYle3OoQ0AIBDF0K5QNiC3wYUN2H8nJPkai6l5prSOdcPU2jckN8mTZEmWZEmW5EFy8f%2Be%2Fg4qczjIEC%2BOzAAAAABJRU5ErkJggg%3D%3D) repeat 0 0;
+}
+
+/* line 23, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/colorbox/_jquery.colorbox.scss */
+#colorbox {
+  outline: 0;
+}
+
+/* line 24, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/colorbox/_jquery.colorbox.scss */
+#cboxTopLeft {
+  width: 21px;
+  height: 21px;
+  background-position: -76px -10px;
+}
+
+/* line 25, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/colorbox/_jquery.colorbox.scss */
+#cboxTopRight {
+  width: 21px;
+  height: 21px;
+  background-position: -105px -10px;
+}
+
+/* line 26, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/colorbox/_jquery.colorbox.scss */
+#cboxBottomLeft {
+  width: 21px;
+  height: 21px;
+  background-position: -76px -39px;
+}
+
+/* line 27, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/colorbox/_jquery.colorbox.scss */
+#cboxBottomRight {
+  width: 21px;
+  height: 21px;
+  background-position: -105px -39px;
+}
+
+/* line 28, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/colorbox/_jquery.colorbox.scss */
+#cboxMiddleLeft, #cboxMiddleRight {
+  width: 21px;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAABAQMAAACmH2%2FxAAAABlBMVEUAAAD%2F%2F%2F%2Bl2Z%2FdAAAAAXRSTlOIo4XTdAAAABBJREFUCJljYGD%2B%2F%2F8DAwMAC%2BEC8odC5dMAAAAASUVORK5CYII%3D) left top repeat-y;
+}
+
+/* line 29, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/colorbox/_jquery.colorbox.scss */
+#cboxMiddleRight {
+  background-position: right top;
+}
+
+/* line 30, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/colorbox/_jquery.colorbox.scss */
+#cboxTopCenter, #cboxBottomCenter {
+  height: 21px;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAyAQMAAACnNSPJAAAABlBMVEUAAAD%2F%2F%2F%2Bl2Z%2FdAAAAAXRSTlOIo4XTdAAAABBJREFUCJljYMADGkiAeAAAJoILARjdfvIAAAAASUVORK5CYII%3D) left top repeat-x;
+}
+
+/* line 31, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/colorbox/_jquery.colorbox.scss */
+#cboxBottomCenter {
+  background-position: left bottom;
+}
+
+/* line 32, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/colorbox/_jquery.colorbox.scss */
+#cboxContent {
+  background: #fff;
+  overflow: hidden;
+}
+
+/* line 33, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/colorbox/_jquery.colorbox.scss */
+.cboxIframe {
+  background: #fff;
+}
+
+/* line 34, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/colorbox/_jquery.colorbox.scss */
+#cboxError {
+  padding: 50px;
+  border: 1px solid #ccc;
+}
+
+/* line 35, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/colorbox/_jquery.colorbox.scss */
+#cboxLoadedContent {
+  margin-bottom: 28px;
+}
+
+/* line 36, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/colorbox/_jquery.colorbox.scss */
+#cboxTitle {
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  color: #949494;
+}
+
+/* line 37, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/colorbox/_jquery.colorbox.scss */
+#cboxCurrent {
+  position: absolute;
+  bottom: 4px;
+  left: 58px;
+  color: #949494;
+}
+
+/* line 38, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/colorbox/_jquery.colorbox.scss */
+#cboxLoadingOverlay {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM%2FrhtAAAAZElEQVRYw%2B3ZsQ3AMAzEwB9BI3tDj6IRmMZFmpRBFICc4AB1ryQJUMACmu%2FrY6nccJt5baBytFNbGXLWx3OH4QkUKFCgQIECBQoUKFCgQIECBQoUKPBVYA%2F29S8m4Nkj%2BvQ3xAXx%2FcvJjNR69gAAAABJRU5ErkJggg%3D%3D) no-repeat center center;
+}
+
+/* line 39, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/colorbox/_jquery.colorbox.scss */
+.colorbox-loading #cboxLoadingGraphic {
+  background: url(/assets/plugins/colorbox/loading-34ef55242fc24c94f0790902c09601d228e9074bf7a1f88c4de6a39b40ce38fa.gif) no-repeat center center;
+}
+
+/* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
+/* line 42, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/colorbox/_jquery.colorbox.scss */
+#cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  width: auto;
+}
+
+/* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
+/* line 45, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/colorbox/_jquery.colorbox.scss */
+#cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {
+  outline: 0;
+}
+
+/* line 47, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/colorbox/_jquery.colorbox.scss */
+#cboxSlideshow {
+  position: absolute;
+  bottom: 4px;
+  right: 30px;
+  color: #0092ef;
+}
+
+/* line 48, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/colorbox/_jquery.colorbox.scss */
+#cboxPrevious {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-position: -50px -10px;
+  width: 25px;
+  height: 25px;
+  text-indent: -9999px;
+}
+
+/* line 49, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/colorbox/_jquery.colorbox.scss */
+#cboxPrevious:hover {
+  background-position: -50px -35px;
+}
+
+/* line 50, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/colorbox/_jquery.colorbox.scss */
+#cboxNext {
+  position: absolute;
+  bottom: 0;
+  left: 27px;
+  background-position: -25px -10px;
+  width: 25px;
+  height: 25px;
+  text-indent: -9999px;
+}
+
+/* line 51, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/colorbox/_jquery.colorbox.scss */
+#cboxNext:hover {
+  background-position: -25px -35px;
+}
+
+/* line 52, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/colorbox/_jquery.colorbox.scss */
+#cboxClose {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-position: 0 -10px;
+  width: 25px;
+  height: 25px;
+  text-indent: -9999px;
+}
+
+/* line 53, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/colorbox/_jquery.colorbox.scss */
+#cboxClose:hover {
+  background-position: 0 -35px;
+}
+
+/*
+  The following fixes a problem where IE7 and IE8 replace a PNG's alpha transparency with a black fill
+  when an alpha filter (opacity change) is set on the element or ancestor element.  This style is not applied to or needed in IE9.
+  See: http://jacklmoore.com/notes/ie-transparency-problems/
+*/
+/* line 60, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/colorbox/_jquery.colorbox.scss */
+.cboxIE #cboxTopLeft,
+.cboxIE #cboxTopCenter,
+.cboxIE #cboxTopRight,
+.cboxIE #cboxBottomLeft,
+.cboxIE #cboxBottomCenter,
+.cboxIE #cboxBottomRight,
+.cboxIE #cboxMiddleLeft,
+.cboxIE #cboxMiddleRight {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
+}
+
+/* line 1, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/jquery.jnotify.scss */
+.jnotify-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100000;
+}
+
+/* line 9, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/jquery.jnotify.scss */
+.jnotify-container .jnotify-notification {
+  position: relative;
+}
+
+/* line 13, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/jquery.jnotify.scss */
+.jnotify-container .jnotify-notification .jnotify-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e3f0db;
+  filter: alpha(opacity=90);
+  -moz-opacity: 0.90;
+  opacity: 0.90;
+  z-index: 1;
+}
+
+/* line 26, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/jquery.jnotify.scss */
+.jnotify-container .jnotify-notification a.jnotify-close,
+.jnotify-container .jnotify-notification a.jnotify-close:link,
+.jnotify-container .jnotify-notification a.jnotify-close:visited,
+.jnotify-container .jnotify-notification a.jnotify-close:focus,
+.jnotify-container .jnotify-notification a.jnotify-close:hover {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  padding: 0 5px;
+  font: bold 1.4em Arial,Helvetica,sans-serif;
+  line-height: 1em;
+  color: #567b1b;
+  text-decoration: none;
+  z-index: 3;
+  cursor: pointer;
+}
+
+/* line 43, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/jquery.jnotify.scss */
+.jnotify-container .jnotify-notification .jnotify-message {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  text-align: center;
+  color: #567b1b;
+  font: bold 1.4em Arial,Helvetica,sans-serif;
+  line-height: 1.2em;
+}
+
+/* line 53, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/jquery.jnotify.scss */
+.jnotify-container .jnotify-notification .jnotify-message * {
+  font-size: 1em;
+}
+
+/* notification type == "error" */
+/* line 58, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/jquery.jnotify.scss */
+.jnotify-container .jnotify-notification-error .jnotify-background {
+  background-color: #d79eac;
+}
+
+/* line 62, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/jquery.jnotify.scss */
+.jnotify-container .jnotify-notification-error .jnotify-close,
+.jnotify-container .jnotify-notification-error .jnotify-message {
+  color: #a72947 !important;
+}
+
+/* notification type == "warning" */
+/* line 68, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/jquery.jnotify.scss */
+.jnotify-container .jnotify-notification-warning .jnotify-background {
+  background-color: #fff7d1;
+}
+
+/* line 72, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/jquery.jnotify.scss */
+.jnotify-container .jnotify-notification-warning .jnotify-close,
+.jnotify-container .jnotify-notification-warning .jnotify-message {
+  color: #c2a928 !important;
+}
+
+/* line 1, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/tipsy/_jquery.tipsy.scss */
+.tipsy {
+  padding: 5px;
+  font-size: 10px;
+  position: absolute;
+  z-index: 100000;
+}
+
+/* line 2, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/tipsy/_jquery.tipsy.scss */
+.tipsy-inner {
+  padding: 5px 8px 4px 8px;
+  background-color: black;
+  color: white;
+  max-width: 200px;
+  text-align: center;
+}
+
+/* line 3, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/tipsy/_jquery.tipsy.scss */
+.tipsy-inner {
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+
+/* line 4, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/tipsy/_jquery.tipsy.scss */
+.tipsy-arrow {
+  position: absolute;
+  background: url(/assets/plugins/tipsy/tipsy-391c714e8bc1004a7857e6a6f95f4bae9ffb0e4e91fd0e617f09fd92635b4d0e.gif) no-repeat top left;
+  width: 9px;
+  height: 5px;
+}
+
+/* line 5, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/tipsy/_jquery.tipsy.scss */
+.tipsy-n .tipsy-arrow {
+  top: 0;
+  left: 50%;
+  margin-left: -4px;
+}
+
+/* line 6, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/tipsy/_jquery.tipsy.scss */
+.tipsy-nw .tipsy-arrow {
+  top: 0;
+  left: 10px;
+}
+
+/* line 7, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/tipsy/_jquery.tipsy.scss */
+.tipsy-ne .tipsy-arrow {
+  top: 0;
+  right: 10px;
+}
+
+/* line 8, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/tipsy/_jquery.tipsy.scss */
+.tipsy-s .tipsy-arrow {
+  bottom: 0;
+  left: 50%;
+  margin-left: -4px;
+  background-position: bottom left;
+}
+
+/* line 9, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/tipsy/_jquery.tipsy.scss */
+.tipsy-sw .tipsy-arrow {
+  bottom: 0;
+  left: 10px;
+  background-position: bottom left;
+}
+
+/* line 10, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/tipsy/_jquery.tipsy.scss */
+.tipsy-se .tipsy-arrow {
+  bottom: 0;
+  right: 10px;
+  background-position: bottom left;
+}
+
+/* line 11, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/tipsy/_jquery.tipsy.scss */
+.tipsy-e .tipsy-arrow {
+  top: 50%;
+  margin-top: -4px;
+  right: 0;
+  width: 5px;
+  height: 9px;
+  background-position: top right;
+}
+
+/* line 12, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/tipsy/_jquery.tipsy.scss */
+.tipsy-w .tipsy-arrow {
+  top: 50%;
+  margin-top: -4px;
+  left: 0;
+  width: 5px;
+  height: 9px;
+}
+
+/*
+
+Original style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Org>
+
+*/
+/* line 7, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/highlight.default.scss */
+.hljs {
+  display: block;
+  padding: 0.5em;
+  background: #F0F0F0;
+}
+
+/* line 13, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/highlight.default.scss */
+.hljs,
+.hljs-subst,
+.hljs-tag .hljs-title,
+.lisp .hljs-title,
+.clojure .hljs-built_in,
+.nginx .hljs-title {
+  color: black;
+}
+
+/* line 22, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/highlight.default.scss */
+.hljs-string,
+.hljs-title,
+.hljs-constant,
+.hljs-parent,
+.hljs-tag .hljs-value,
+.hljs-rules .hljs-value,
+.hljs-rules .hljs-value .hljs-number,
+.hljs-preprocessor,
+.hljs-pragma,
+.haml .hljs-symbol,
+.ruby .hljs-symbol,
+.ruby .hljs-symbol .hljs-string,
+.hljs-aggregate,
+.hljs-template_tag,
+.django .hljs-variable,
+.smalltalk .hljs-class,
+.hljs-addition,
+.hljs-flow,
+.hljs-stream,
+.bash .hljs-variable,
+.apache .hljs-tag,
+.apache .hljs-cbracket,
+.tex .hljs-command,
+.tex .hljs-special,
+.erlang_repl .hljs-function_or_atom,
+.asciidoc .hljs-header,
+.markdown .hljs-header,
+.coffeescript .hljs-attribute {
+  color: #800;
+}
+
+/* line 53, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/highlight.default.scss */
+.smartquote,
+.hljs-comment,
+.hljs-annotation,
+.hljs-template_comment,
+.diff .hljs-header,
+.hljs-chunk,
+.asciidoc .hljs-blockquote,
+.markdown .hljs-blockquote {
+  color: #888;
+}
+
+/* line 64, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/highlight.default.scss */
+.hljs-number,
+.hljs-date,
+.hljs-regexp,
+.hljs-literal,
+.hljs-hexcolor,
+.smalltalk .hljs-symbol,
+.smalltalk .hljs-char,
+.go .hljs-constant,
+.hljs-change,
+.lasso .hljs-variable,
+.makefile .hljs-variable,
+.asciidoc .hljs-bullet,
+.markdown .hljs-bullet,
+.asciidoc .hljs-link_url,
+.markdown .hljs-link_url {
+  color: #080;
+}
+
+/* line 82, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/highlight.default.scss */
+.hljs-label,
+.hljs-javadoc,
+.ruby .hljs-string,
+.hljs-decorator,
+.hljs-filter .hljs-argument,
+.hljs-localvars,
+.hljs-array,
+.hljs-attr_selector,
+.hljs-important,
+.hljs-pseudo,
+.hljs-pi,
+.haml .hljs-bullet,
+.hljs-doctype,
+.hljs-deletion,
+.hljs-envvar,
+.hljs-shebang,
+.apache .hljs-sqbracket,
+.nginx .hljs-built_in,
+.tex .hljs-formula,
+.erlang_repl .hljs-reserved,
+.hljs-prompt,
+.asciidoc .hljs-link_label,
+.markdown .hljs-link_label,
+.vhdl .hljs-attribute,
+.clojure .hljs-attribute,
+.asciidoc .hljs-attribute,
+.lasso .hljs-attribute,
+.coffeescript .hljs-property,
+.hljs-phony {
+  color: #88F;
+}
+
+/* line 114, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/highlight.default.scss */
+.hljs-keyword,
+.hljs-id,
+.hljs-title,
+.hljs-built_in,
+.hljs-aggregate,
+.css .hljs-tag,
+.hljs-javadoctag,
+.hljs-phpdoc,
+.hljs-yardoctag,
+.smalltalk .hljs-class,
+.hljs-winutils,
+.bash .hljs-variable,
+.apache .hljs-tag,
+.go .hljs-typename,
+.tex .hljs-command,
+.asciidoc .hljs-strong,
+.markdown .hljs-strong,
+.hljs-request,
+.hljs-status {
+  font-weight: bold;
+}
+
+/* line 136, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/highlight.default.scss */
+.asciidoc .hljs-emphasis,
+.markdown .hljs-emphasis {
+  font-style: italic;
+}
+
+/* line 141, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/highlight.default.scss */
+.nginx .hljs-built_in {
+  font-weight: normal;
+}
+
+/* line 145, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/highlight.default.scss */
+.coffeescript .javascript,
+.javascript .xml,
+.lasso .markup,
+.tex .hljs-formula,
+.xml .javascript,
+.xml .vbscript,
+.xml .css,
+.xml .hljs-cdata {
+  opacity: 0.5;
+}
+
+/**
+ * KEYS.css
+ *
+ * A simple stylesheet for rendering beautiful keyboard-style elements.
+ *
+ * Author:  Michael Hüneburg
+ * Website: http://michaelhue.com/keyscss
+ * License: MIT License (see LICENSE.txt)
+ */
+/* Base style, essential for every key. */
+/* line 12, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/_keys.scss */
+kbd, .key {
+  display: inline;
+  display: inline-block;
+  min-width: 1em;
+  padding: .2em .3em;
+  font: normal .85em/1 "Lucida Grande", Lucida, Arial, sans-serif;
+  text-align: center;
+  text-decoration: none;
+  border-radius: .3em;
+  border: none;
+  cursor: default;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* line 27, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/_keys.scss */
+kbd[title], .key[title] {
+  cursor: help;
+}
+
+/* Dark style for display on light background. This is the default style. */
+/* line 32, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/_keys.scss */
+kbd.dark, .dark-keys kbd, .key, .key.dark, .dark-keys .key {
+  background: #505050;
+  background: linear-gradient(top, #3c3c3c, #505050);
+  color: #fafafa;
+  text-shadow: -1px -1px 0 #464646;
+  box-shadow: inset 0 0 1px #969696, inset 0 -0.05em 0.4em #505050, 0 0.1em 0 #1e1e1e, 0 0.1em 0.1em rgba(0, 0, 0, 0.3);
+}
+
+/* Light style for display on dark background. */
+/* line 41, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/plugins/_keys.scss */
+kbd, kbd.light, .light-keys kbd, .key.light, .light-keys .key {
+  background: #fafafa;
+  background: linear-gradient(top, #d2d2d2, white);
+  color: #323232;
+  text-shadow: 0 0 2px white;
+  box-shadow: inset 0 0 1px white, inset 0 0 0.4em #c8c8c8, 0 0.1em 0 #828282, 0 0.11em 0 rgba(0, 0, 0, 0.4), 0 0.1em 0.11em rgba(0, 0, 0, 0.9);
+}
+
+/* line 1, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_application.scss */
+.page-wrap {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* --------- Header --------- */
+/* line 8, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_application.scss */
+.header-toolbar {
+  background: #222 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAqCAIAAAD9HKYrAAAALUlEQVQI12NQUlJiYmBgQMGmpqbMMPb%2F%2F%2F%2FhNDobGeMS%2F%2FfvH0nqsdnFwMAAAMlEUgVufCymAAAAAElFTkSuQmCC) repeat-x left top;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  overflow: hidden;
+}
+/* line 13, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_application.scss */
+.header-toolbar ul {
+  color: #ACACAC;
+  font-size: 11px;
+  height: 36px;
+  line-height: 34px;
+  vertical-align: middle;
+  white-space: nowrap;
+  list-style: none;
+  padding: 0;
+  margin: 6px 0 0 0;
+  text-transform: uppercase;
+}
+/* line 25, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_application.scss */
+.header-toolbar ul li {
+  float: left;
+}
+/* line 28, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_application.scss */
+.header-toolbar ul li:first-child {
+  margin-left: -10px;
+}
+/* line 29, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_application.scss */
+.header-toolbar ul li a {
+  color: #ACACAC;
+  display: block;
+  height: 34px;
+  padding: 0 10px;
+}
+
+/* line 39, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_application.scss */
+.header {
+  background: #272727 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA8AAAAAGCAAAAAAp5KhzAAABE0lEQVRYw%2B2TSY6EQAwEwxwKimV%2BMP%2F%2F37Bz8RzaVLM0aq5IvpRSYYMElSG%2FLAH4duZ7IocdWbPMOcCcAzIVKTO%2F83tH9ptTAcKaxcj67IbIGAHGEmCMCBwIsiNDicBQAjK8SGUcwUgpQF8h0FcAfc0VAelqEH2Rrgahu5HbBqBtBFJGNvk8tVNOZD%2F9%2BwFunnr5HmibT1M9Ev08VftS6Orv2far9Fe1X7NeEU33pXaDqJFod6qwJWNUawVqrYjogaQGqrXuTKZCUyentcOaGh5Sw3VjgS5hY0GyRg8G6d44vWVlgMz9dX%2Fd38f6S%2Bb%2Bur%2Fu72P9JXN%2F3V%2F397H%2BLpn76%2F66v4%2F1N2Tur%2Fvr%2Fj7WX%2F4BjMKAZcHZAqYAAAAASUVORK5CYII%3D) center top;
+  color: #CFCFCF;
+  height: 165px;
+}
+
+/* line 46, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_application.scss */
+.logo .logo-text, .logo .logo-subtext {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  text-shadow: 1px 1px 1px black;
+}
+/* line 51, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_application.scss */
+.logo .logo-text {
+  font-size: 30px;
+  padding-top: 45px;
+}
+/* line 55, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_application.scss */
+.logo .logo-subtext {
+  display: block;
+  font-size: 17px;
+  font-weight: normal;
+  margin: 17px 0 0 100px;
+}
+
+/* line 63, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_application.scss */
+.about-author {
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  border: 1px solid #3C3C3C;
+  padding: 20px;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  width: 400px;
+  height: 81px;
+  text-align: right;
+}
+
+/* line 78, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_application.scss */
+.author-speak {
+  position: relative;
+  padding-right: 74px;
+}
+/* line 81, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_application.scss */
+.author-speak a {
+  text-indent: 100%;
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-position: 0 -122px;
+  height: 64px;
+  width: 64px;
+}
+
+/* line 92, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_application.scss */
+.follow-links {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 5px;
+}
+/* line 98, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_application.scss */
+.follow-links .rss-big-link {
+  color: #f79e3f;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  vertical-align: middle;
+  padding: 0 10px 0 45px;
+  margin-right: 10px;
+  position: relative;
+}
+/* line 107, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_application.scss */
+.follow-links .rss-big-link:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 6px;
+  background-position: 0 -294px;
+  height: 32px;
+  width: 32px;
+}
+
+/* line 118, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_application.scss */
+.contacts-links {
+  position: absolute;
+  right: 10px;
+  bottom: 3px;
+  padding: 7px;
+  overflow: hidden;
+}
+/* line 125, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_application.scss */
+.contacts-links .ico {
+  opacity: 0.7;
+  font-size: 0;
+  width: 16px;
+  height: 16px;
+  display: block;
+  float: left;
+  margin-left: 3px;
+  position: relative;
+}
+/* line 134, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_application.scss */
+.contacts-links .ico:before {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 143, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_application.scss */
+.contacts-links .ico.gmail:before {
+  background-position: 0 -106px;
+}
+/* line 144, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_application.scss */
+.contacts-links .ico.facebook:before {
+  background-position: 0 -90px;
+}
+/* line 145, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_application.scss */
+.contacts-links .ico:hover {
+  opacity: 1;
+}
+
+/* line 151, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_application.scss */
+.main-menu {
+  padding-bottom: 21px;
+}
+/* line 154, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_application.scss */
+.main-menu ul {
+  border-radius: 5px;
+  box-shadow: #ABABAB 0 1px 2px;
+  background: white url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAqCAAAAABXFW6gAAAAIElEQVQI12P4z8SAAf8zMTD9Z%2FrP9J%2FpHxqJzIdBDP0Azl8XN86nmEYAAAAASUVORK5CYII%3D) repeat-x 0 0;
+  height: 42px;
+  line-height: 40px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: absolute;
+  top: -21px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+/* line 172, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_application.scss */
+.main-menu li {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAApAQMAAAAlE2qSAAAABlBMVEXi4uL%2F%2F%2F%2FQNzhYAAAADUlEQVQImWNoYKAyBABI%2FxSB5O4hPgAAAABJRU5ErkJggg%3D%3D) no-repeat right top;
+  float: left;
+  height: 40px;
+}
+/* line 177, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_application.scss */
+.main-menu a {
+  color: #5C5C5C;
+  display: block;
+  padding: 0 15px;
+  text-shadow: 1px 1px 1px white;
+  float: left;
+  height: 40px;
+}
+
+/* line 187, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_application.scss */
+.lt-ie9 .main-menu ul {
+  background-image: url(/assets/layout/main-menu-bg-ca06cd2cd97e8f8242ab4a9984323e21fc8e10d90b6368b593404ef663a51cc1.png);
+}
+/* line 188, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_application.scss */
+.lt-ie9 .main-menu li {
+  background-image: url(/assets/layout/main-menu-border-75aa1c72bd163b321f9d5ee3042b1d6a3b1eb1762911b9a32cee98be027bf63b.png);
+}
+
+/* --------- Torso --------- */
+/* line 192, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_application.scss */
+.torso {
+  padding-top: 15px;
+}
+/* line 195, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_application.scss */
+.torso .page-wrap {
+  overflow: hidden;
+}
+/* line 198, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_application.scss */
+.torso .primary-sidebar {
+  width: 250px;
+  float: right;
+}
+/* line 202, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_application.scss */
+.torso .page-content {
+  float: left;
+  width: 735px;
+}
+
+/* line 209, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_application.scss */
+.flash-messages .alert, .flash-messages .notice {
+  border-radius: 3px;
+  /*@include box-shadow(1px 1px 0 0 rgba(255, 255, 255, 0.65) inset);*/
+  box-shadow: #ABABAB 0 1px 2px;
+  text-shadow: 0 1px 1px #FFFFFF;
+  border: 1px solid;
+  clear: both;
+  margin-bottom: 9px;
+  margin-top: 10px;
+  padding: 7px 15px 7px 30px;
+  position: relative;
+}
+/* line 221, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_application.scss */
+.flash-messages .alert {
+  background-color: #FFE68B;
+  color: #675100;
+  border-color: #C9AB40;
+}
+/* line 226, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_application.scss */
+.flash-messages .notice {
+  background-color: #A5C8F4;
+  color: #205A94;
+  border-color: #446D99;
+}
+
+/* line 233, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_application.scss */
+.box-title {
+  color: #5C5C5C;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* line 241, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_application.scss */
+.main-box h1 {
+  font-size: 16px;
+  margin: .5em 0 1em 0;
+}
+/* line 245, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_application.scss */
+.main-box .h2 {
+  font-size: 18px;
+  line-height: 130%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  margin: 2em 0 1em 0;
+}
+
+/* --------- Footer --------- */
+/* line 255, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_application.scss */
+.footer {
+  background: black url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAIAAABvrngfAAAAIUlEQVQI12MQExOTRgUMaHygCgY0PooquAkMaHyoEJoNAHXKCwueSJRhAAAAAElFTkSuQmCC) 0 0;
+  clear: both;
+  color: #858585;
+  font-size: 12px;
+  margin-top: 30px;
+  padding: 45px 0;
+}
+/* line 262, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_application.scss */
+.footer .page-wrap {
+  overflow: hidden;
+}
+/* line 263, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_application.scss */
+.footer .col {
+  float: left;
+}
+/* line 266, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_application.scss */
+.footer li {
+  margin-bottom: 2px;
+}
+/* line 269, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_application.scss */
+.footer a {
+  color: #247CA5;
+}
+/* line 272, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_application.scss */
+.footer .footer-title {
+  color: #E2E2E2;
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-bottom: 20px;
+}
+
+/* line 280, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_application.scss */
+.under-footer {
+  background: #272727 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAjCAYAAABVcWC0AAAAHUlEQVQI12PQ0tL6z%2FT%2F%2F38GJgYGBgwCp8QAyQIA5fwTsJdR%2F3oAAAAASUVORK5CYII%3D) repeat-x 0 0;
+  color: #7E7E7E;
+  height: 35px;
+  line-height: 35px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+/* line 289, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_application.scss */
+.social-buttons {
+  margin: 15px 0;
+}
+
+/* line 292, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/layouts/_application.scss */
+.fb-like {
+  width: 120px !important;
+}
+
+/* line 3, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/box.scss */
+.box {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: #ABABAB 0 1px 2px;
+  margin-bottom: 15px;
+  padding: 15px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 22px;
+}
+/* line 13, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/box.scss */
+.box li {
+  margin-bottom: 2px;
+}
+/* line 16, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/box.scss */
+.box a {
+  color: #247CA5;
+}
+
+/* line 20, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/box.scss */
+.box-space {
+  height: 15px;
+}
+
+/* --- file types --- */
+/* line 25, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/box.scss */
+.zip {
+  background: transparent url(/assets/icons/file-zip-16x16-ec4155f17e857fb17dfa0fefa437304173863625c2cfea3f9c129c3d1fe4783a.png) no-repeat left center;
+  padding-left: 20px;
+}
+
+/* line 29, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/box.scss */
+.rar {
+  background: transparent url(/assets/icons/file-rar-16x16-eb08ba77cd46cb5a2c318b0418d674990212542f02e2f0236ddceaec9da50c2e.gif) no-repeat left center;
+  padding-left: 20px;
+}
+
+/* line 33, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/box.scss */
+.txt {
+  background: transparent url(/assets/icons/file-txt-16x16-60e1d093fce6ad454deceb82af7b3f02498e6ab2a2c4be03d6a8b6d0994ff076.png) no-repeat left center;
+  padding-left: 20px;
+}
+
+/* line 37, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/box.scss */
+.mp3 {
+  background: transparent url(/assets/icons/file-mp3-16x16-97312e69134789913021009a30bfddd88a764c06ab2a253715d9b5d0457f1c14.png) no-repeat left center;
+  padding-left: 20px;
+}
+
+/* line 41, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/box.scss */
+.doc-link {
+  background: transparent url(/assets/icons/file-doc-16x16-3f8d9a2c899364c7a11fbf42c5858845cd74b1839f04dffa45f74bca5a58e6e8.png) no-repeat left center;
+  padding-left: 20px;
+}
+
+/* line 45, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/box.scss */
+.pdf-link {
+  background: transparent url(/assets/icons/file-pdf-16x16-27420ea72e036ea1511bf0a0a4b263a02a2bf52ecd0e297c05ea1d50e7bb218a.png) no-repeat left center;
+  padding-left: 20px;
+}
+
+/* line 49, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/box.scss */
+.cdr-link {
+  background: transparent url(/assets/icons/file-cdr-16x16-56a7cec84873127416fe39bbbf0794a726ea42439f5dfe6526940adfcd8450da.png) no-repeat left center;
+  padding-left: 20px;
+}
+
+/* line 53, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/box.scss */
+.model-link {
+  background: transparent url(/assets/icons/3d-16x16-1b728964b74d577d928f36ae41a65433c5f5c2eac536a9b2869359c6181b36a6.png) no-repeat left center;
+  padding-left: 20px;
+}
+
+/* line 58, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/box.scss */
+.photo-image {
+  background-color: #ECECEC;
+  border-radius: 7px;
+  margin: 7px;
+  padding: 7px;
+  display: inline-block;
+}
+/* line 64, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/box.scss */
+.photo-image img {
+  display: block;
+}
+
+/* line 69, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/box.scss */
+.box .hr {
+  background-color: #BFBFBF;
+  height: 1px;
+  margin: 1em 0;
+}
+
+/* line 74, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/box.scss */
+.box-images, .box-flash, .box-iframe {
+  text-align: center;
+  margin: 1em 0;
+}
+
+/* line 78, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/box.scss */
+.img-descr {
+  margin: 0.25em 0 1.5em;
+  font-style: italic;
+  font-size: 12px;
+}
+
+/* line 83, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/box.scss */
+.newsbreak {
+  display: none;
+}
+
+/* line 86, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/box.scss */
+.simple-list {
+  list-style: none !important;
+}
+
+/* line 1, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.post-preview h2, .post-preview h2 a,
+.post h1, .post h1 a {
+  color: #464646;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 33px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 11, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.post-content h2, .post-content h2 a {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 130%;
+  margin: 2em 0 1em 0;
+}
+
+/* line 18, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.post-content h3, .post-content h3 a {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 130%;
+  margin: 1.5em 0 1em 0;
+}
+
+/* line 25, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.post-meta {
+  font-size: 12px;
+  font-style: italic;
+  margin: 10px 0;
+  padding-left: 5px;
+}
+
+/* line 44, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.link {
+  position: relative;
+}
+/* line 46, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.link:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+}
+/* line 52, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.link.category-link {
+  padding: 0 5px 0 15px;
+}
+/* line 34, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.link.category-link:before {
+  top: 2px;
+}
+/* line 54, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.link.category-link:before {
+  background-position: 0 0;
+  height: 10px;
+  width: 10px;
+}
+/* line 56, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.link.tag-link {
+  padding: 0 5px 0 15px;
+}
+/* line 34, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.link.tag-link:before {
+  top: 2px;
+}
+/* line 58, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.link.tag-link:before {
+  background-position: 0 -345px;
+  height: 10px;
+  width: 10px;
+}
+/* line 60, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.link.date-link {
+  padding: 0 5px 0 15px;
+}
+/* line 34, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.link.date-link:before {
+  top: 2px;
+}
+/* line 62, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.link.date-link:before {
+  background-position: 0 -70px;
+  height: 10px;
+  width: 10px;
+}
+/* line 64, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.link.comment-link {
+  padding: 0 5px 0 15px;
+  white-space: nowrap;
+}
+/* line 34, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.link.comment-link:before {
+  top: 2px;
+}
+/* line 67, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.link.comment-link:before {
+  background-position: 0 -60px;
+  height: 10px;
+  width: 10px;
+}
+/* line 69, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.link.edited-link {
+  padding: 0 5px 0 15px;
+}
+/* line 34, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.link.edited-link:before {
+  top: 2px;
+}
+/* line 71, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.link.edited-link:before {
+  background-position: 0 -80px;
+  height: 10px;
+  width: 10px;
+}
+/* line 73, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.link.rss-link {
+  padding: 0 5px 0 17px;
+}
+/* line 38, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.link.rss-link:before {
+  top: 1px;
+}
+/* line 75, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.link.rss-link:before {
+  background: url(/assets/icons/rss-12x12-0a3b582db8fc01dd87e0d0084e60e376ec8867d28e2f16aba13e43570b390350.png) no-repeat;
+}
+/* line 77, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.link.ip-link {
+  padding: 0 5px 0 21px;
+}
+/* line 42, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.link.ip-link:before {
+  top: -2px;
+}
+/* line 79, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.link.ip-link:before {
+  background: url(/assets/icons/remote-computer-16x16-cd11b6d230e1fe12bb221a198b9f6c7637745abd0b98c1d1128c742ee14cef7b.png) no-repeat;
+}
+
+/* line 83, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.external {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAA21BMVEUAAAANIzQRO1YjeK8kd6spgLsqgr4wgrU9kMNClchHms1Up9v%2F%2F%2F8AAAAAAAAAAAAAAAAAAAAAAAAAAAAjd61RpNcidathtOlAk8YmYIsmXohjtuswgrU1kNJClcg%2Fm%2BJAiLZrsuAjeK8kd6sqgr4wgrU%2FiLk%2FneVAibZClchDirdKkr5OlMBWqdxbotBkt%2BxnnMBxpsewws%2B0ydq00eu20%2BzB0%2BDE0dzE3OrP4%2FDQ4u3U6PXb3eHc5u3f4eTi6vTl6%2FTn7PXq6uvt7u%2Fu8PL7%2B%2Fv9%2Ff3%2B%2Fv7%2F%2F%2F%2FdFAVKAAAAInRSTlMAAAAAAAAAAAAAAAAAAwYMFhcYGiAgQEBTam%2FA3t7e4ODgy3hgRQAAAH9JREFUGJVj4EEDDMQIcHBycYvrA4E0QoBLVNHD2kMXJiAhp6mnp%2BdhqQkVYJexcLfS8dD2UIUKsCi72hq6aWkoKEMFmJVczJwMjNRExKACbCrOdsbmNiqsTFABRllTB3tHE1lGBqiAoJS8urq6vKQQH1SAXxgMBPh5ifYLKgAAhM0VKHcjiy4AAAAASUVORK5CYII%3D) no-repeat right bottom;
+  padding-right: 18px;
+}
+
+/* line 88, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.fancy-page-title {
+  background-color: #FFF9EF;
+  background: linear-gradient(top, #FFEDCF, white);
+  background: -webkit-linear-gradient(top, #FFEDCF, white);
+}
+/* line 92, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.fancy-page-title h1 {
+  color: #464646;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 33px;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 102, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+a.button-link {
+  border-radius: 21px;
+  box-shadow: #ABABAB 0 1px 2px;
+  background-color: #F0F0F0;
+  border: 1px solid white;
+  color: #5B5B5B;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 12px;
+  margin: 15px 0 6px;
+  padding: 5px 20px;
+  text-shadow: 1px 1px 1px white;
+}
+
+/* line 116, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.avatar img {
+  background-color: #FBFBFB;
+  padding: 3px;
+  border-radius: 3px;
+  box-shadow: #CFCFCF 0 1px 2px;
+  margin: 1px;
+}
+
+/* line 123, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.comment {
+  margin-top: 1em;
+}
+/* line 125, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.comment .browser img {
+  padding-top: 12px;
+}
+/* line 128, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.comment blockquote {
+  margin: 0 0 0 30px;
+}
+
+/* line 132, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.comment-meta {
+  background-color: #F2F2F2;
+  border-radius: 3px;
+  border: 1px solid #DFDFDF;
+  overflow: hidden;
+}
+/* line 137, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.comment-meta > div {
+  float: left;
+  padding: 3px 10px 3px 3px;
+  height: 40px;
+  line-height: 40px;
+  vertical-align: middle;
+}
+/* line 144, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.comment-meta .avatar {
+  width: 40px;
+}
+/* line 147, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.comment-meta .author {
+  font-weight: bold;
+}
+
+/* line 151, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.comment-content {
+  margin: 1em 0;
+}
+
+/* line 154, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.field-wrap {
+  margin: 1em 0;
+}
+
+/* line 157, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.field-with-error {
+  display: inline;
+}
+
+/* line 160, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.field-info {
+  color: #7F7F7F;
+  font-style: italic;
+}
+
+/* line 164, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.error-messages {
+  padding: 5px;
+  margin: 1em 0;
+}
+/* line 167, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.error-messages ul {
+  list-style-image: none;
+  list-style-type: disc;
+}
+
+/* line 172, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.fields {
+  overflow: hidden;
+}
+
+/* line 175, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.fields-col2 {
+  float: left;
+  width: 255px;
+}
+
+/* --- form --- */
+/* line 182, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.laconic-form input[type="text"] {
+  border: 1px solid #ABABAB;
+  border-radius: 5px;
+  padding: 2px 4px;
+}
+/* line 186, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.laconic-form input[type="text"]:focus {
+  border-color: #247CA5;
+}
+/* line 190, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.laconic-form .buttons {
+  margin-top: 15px;
+}
+
+/* line 194, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.main-box .field input[type="text"] {
+  max-width: 450px;
+}
+
+/* line 197, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.add-comment input[type="text"] {
+  width: 200px;
+}
+
+/* line 200, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.box-content textarea {
+  width: 488px;
+}
+
+/* line 205, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.nice-form button, .main-box button {
+  border-radius: 3px;
+  box-shadow: #F6F6F6 0 0 1px 1px inset;
+  background-color: #E3E3E3;
+  border: 1px solid #CCCCCC;
+  color: #333333;
+  font-family: "helvetica neue",helvetica,arial,sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  text-shadow: 0 1px 0 #FFFFFF;
+  min-width: 120px;
+  height: 36px;
+}
+/* line 220, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.nice-form button:hover, .main-box button:hover {
+  box-shadow: #EAEAEA 0 0 1px 1px inset;
+  background-color: #D9D9D9;
+  color: #222222;
+}
+/* line 225, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.nice-form button:active, .main-box button:active {
+  box-shadow: #E3E3E3 0 0 1px 1px inset;
+  background-color: #D0D0D0;
+  color: #000000;
+}
+
+/* line 231, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.box.counters .box-content {
+  text-align: center;
+}
+
+/* line 235, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+code {
+  whitespace: pre;
+}
+
+/* line 238, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.hidden {
+  display: none;
+}
+
+/* line 241, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.center {
+  text-align: center;
+}
+
+/* line 246, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+html .tipsy {
+  font-size: 14px;
+  line-height: 22px;
+}
+/* line 249, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+html .tipsy a {
+  color: #FFB93F;
+  font-weight: bold;
+}
+
+/* line 255, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.box.last-comments {
+  font-size: 12px;
+}
+
+/* line 258, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.cmt-author {
+  font-weight: bold;
+}
+
+/* line 261, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.cmt-cite {
+  font-style: italic;
+}
+
+/* line 264, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+html .ui-widget-content a {
+  color: #247CA5;
+}
+
+/* line 267, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.post-image {
+  float: left;
+  padding-right: 5px;
+}
+
+/* line 272, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.pagination {
+  overflow: hidden;
+}
+/* line 275, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.pagination .prev, .pagination .next {
+  display: block;
+  float: left;
+}
+/* line 278, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.pagination .prev a, .pagination .next a {
+  overflow: hidden;
+  text-indent: 9999px;
+  font-size: 0;
+  display: block;
+}
+/* line 285, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.pagination .prev a {
+  background-position: 0 -267px;
+  height: 27px;
+  width: 27px;
+}
+/* line 59, /Users/lllukom/.rvm/gems/ruby-2.7.4/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.pagination .prev a:hover, .pagination .prev a.previous-button-hover {
+  background-position: 0 -240px;
+}
+/* line 287, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.pagination .prev a:hover {
+  background-position: 0 -240px;
+}
+/* line 289, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.pagination .next a {
+  background-position: 0 -213px;
+  height: 27px;
+  width: 27px;
+}
+/* line 59, /Users/lllukom/.rvm/gems/ruby-2.7.4/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.pagination .next a:hover, .pagination .next a.next-button-hover {
+  background-position: 0 -186px;
+}
+/* line 291, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.pagination .next a:hover {
+  background-position: 0 -186px;
+}
+/* line 293, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.pagination .page {
+  display: block;
+  float: left;
+  border-left: 1px solid #EEE;
+}
+/* line 297, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.pagination .page:first-child {
+  border-left: none;
+}
+/* line 300, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.pagination .page.current {
+  font-weight: bold;
+}
+/* line 304, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.pagination .page a, .pagination .page.current, .pagination .page.gap {
+  display: block;
+  float: left;
+  height: 27px;
+  line-height: 27px;
+  padding: 0 10px;
+}
+/* line 311, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.pagination .page a:hover {
+  text-decoration: none;
+  font-weight: bold;
+  color: inherit;
+}
+/* line 317, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.pagination .prev + .page {
+  border-left: none;
+}
+
+/* line 322, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/global/_common.scss */
+.preview-text-box {
+  text-align: center;
+  font: 28px/28px sans-serif;
+  margin: 1.5em 0;
+}
+
+/* line 1, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/controllers/pages.scss */
+.morda {
+  background-color: #4f4f4f;
+}
+/* line 4, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/controllers/pages.scss */
+.morda .main-box {
+  background: #E3DDBB url(/assets/textures/yellow-00a563d12f2560dc3300df4d7df7e6a7e6151a50aa31900702f9d669a1c9da66.jpg);
+  font-size: 14px;
+  color: black;
+}
+/* line 9, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/controllers/pages.scss */
+.morda .main-box .box-title {
+  display: none;
+}
+/* line 12, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/controllers/pages.scss */
+.morda .main-box .morda-logo {
+  text-align: center;
+  margin: 2em;
+}
+/* line 16, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/controllers/pages.scss */
+.morda .main-box .intro {
+  background: url(/assets/morda/m_cherep-c4fba345d5c9bf3c6e52b3c9651669fa30e1ff6154e3a44c3ed9ade49721dbbc.png) no-repeat left;
+  padding-left: 70px;
+  height: 60px;
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 23, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/controllers/pages.scss */
+.morda .main-box .hline {
+  background: url(/assets/morda/hr-2504616ca066f5580f1b163f99dc6e356aeacc363e0da91bf3f67357e7179f41.png) no-repeat center center;
+  margin: 2em 0;
+  height: 10px;
+}
+/* line 28, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/controllers/pages.scss */
+.morda .main-box h2 {
+  font-weight: bold;
+  text-indent: 3ex;
+  font-size: 100%;
+  margin: 2em 0 1em 0;
+}
+/* line 34, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/controllers/pages.scss */
+.morda .main-box .history {
+  color: #2d2d2d;
+  font: 200% cursive;
+  text-indent: 3ex;
+  text-align: justify;
+  font-size: 90%;
+}
+/* line 41, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/controllers/pages.scss */
+.morda .main-box .preview-images img {
+  border: 1px dotted gray;
+}
+/* line 44, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/controllers/pages.scss */
+.morda .main-box .navigation {
+  list-style: none;
+  text-align: center;
+  margin: 1em 0;
+}
+/* line 49, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/controllers/pages.scss */
+.morda .main-box .delimiter {
+  text-align: center;
+  margin: 1em 0;
+}
+/* line 53, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/controllers/pages.scss */
+.morda .main-box a {
+  color: #1F5BFF;
+  font-weight: bold;
+}
+/* line 57, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/controllers/pages.scss */
+.morda .main-box ul {
+  list-style: disc none;
+}
+
+/* line 63, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/controllers/pages.scss */
+.aneks {
+  background: #F8F8F8 url(/assets/textures/whitepaperbg-c4e6de94e9e61d392ff442a1377fa260c305d979cf3184372bbc0318c8d4a08b.jpg);
+}
+/* line 67, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/controllers/pages.scss */
+.aneks .main-box .box-title {
+  background: transparent url(/assets/icons/cool-fb2287a08bcac20a78de1f83005ee743b1802b379872dcd86af35b7a1ac9b74d.gif) no-repeat left center;
+  padding-left: 40px;
+  height: 30px;
+  line-height: 30px;
+  vertical-align: middle;
+}
+/* line 74, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/controllers/pages.scss */
+.aneks .main-box ol {
+  padding-left: 25px;
+  text-align: center;
+  list-style: none;
+}
+/* line 79, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/controllers/pages.scss */
+.aneks .main-box li {
+  background: transparent url(/assets/smiles-separator-6c659e2c7820afdcded8ae70f4865792b732898dc5f4a93e15a32dd4c0df46d5.png) no-repeat center bottom;
+  padding: 5px 0 25px 0;
+}
+
+/* line 86, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/controllers/pages.scss */
+.games-for-two {
+  background-color: #4f4f4f;
+}
+/* line 89, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/controllers/pages.scss */
+.games-for-two .main-box {
+  background: #1E1A15 url(/assets/textures/zaklepky-a7293b1c6ce9c96c1156fb3c9cd09c1b444355f3845b69d998179516f330b1a5.gif);
+  color: #979788;
+}
+/* line 93, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/controllers/pages.scss */
+.games-for-two .main-box .box-title {
+  background: transparent url(/assets/icons/cherep-25abc0ad8b06a68d583ecdc628f5b43df1f885eb1a8f12b7def1653ba2815e05.gif) no-repeat left center;
+  color: #FFFF80;
+  padding-left: 46px;
+  height: 34px;
+  line-height: 34px;
+  vertical-align: middle;
+  font-weight: bold;
+}
+/* line 102, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/controllers/pages.scss */
+.games-for-two .main-box .intro, .games-for-two .main-box .outro {
+  color: #e3e35b;
+  text-indent: 3ex;
+  margin: 1em 0;
+}
+/* line 107, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/controllers/pages.scss */
+.games-for-two .main-box h2 {
+  font-size: 100%;
+  font-weight: normal;
+  color: #ffec00;
+  padding-left: 3ex;
+  margin: 1em 0;
+}
+/* line 114, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/controllers/pages.scss */
+.games-for-two .main-box h2 img {
+  padding-right: 10px;
+}
+/* line 117, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/controllers/pages.scss */
+.games-for-two .main-box .table caption {
+  color: #ffec00;
+  text-align: center;
+  margin: 0.5em;
+}
+/* line 122, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/controllers/pages.scss */
+.games-for-two .main-box .table {
+  color: #979788;
+  text-align: center;
+}
+/* line 126, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/controllers/pages.scss */
+.games-for-two .main-box .table td,
+.games-for-two .main-box .table th {
+  border: 1px solid;
+  border-color: #2f2f2f #0f0f0f #0f0f0f #2f2f2f;
+  padding: 10px;
+}
+/* line 132, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/controllers/pages.scss */
+.games-for-two .main-box .table td:nth-child(even) {
+  text-align: left;
+}
+/* line 135, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/controllers/pages.scss */
+.games-for-two .main-box .table a img {
+  display: block;
+  margin: 3px auto;
+}
+/* line 139, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/controllers/pages.scss */
+.games-for-two .main-box .simple-table {
+  color: #979788;
+  padding: 5px;
+}
+/* line 143, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/controllers/pages.scss */
+.games-for-two .main-box a {
+  color: #4040ff;
+}
+/* line 146, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/controllers/pages.scss */
+.games-for-two .main-box a:hover {
+  color: #ff4040;
+}
+/* line 149, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/controllers/pages.scss */
+.games-for-two .main-box .recommend {
+  font: 90% "Courier New", Courier, monospace;
+  color: #6d6d61;
+  position: relative;
+  top: 2px;
+}
+/* line 155, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/controllers/pages.scss */
+.games-for-two .main-box .hline {
+  border: 1px solid;
+  border-top-color: #424242;
+  border-bottom-color: #808080;
+  margin: 1em 0;
+}
+/* line 161, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/controllers/pages.scss */
+.games-for-two .main-box .game-name {
+  color: #ffec00;
+  display: block;
+}
+
+/* line 169, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/controllers/pages.scss */
+.phrases .main-box {
+  background: white url(/assets/textures/ligh-bc39b643de69c509fc2815291185ad928d91bba50cb4bb48d467b1644dc5921f.jpg);
+}
+/* line 172, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/controllers/pages.scss */
+.phrases .main-box .box-title {
+  background: transparent url(/assets/icons/happyface-5a0ae3e0b231f113843a6923350c5240809a09c2579a9d2377b293d907a758a7.png) no-repeat left center;
+  padding-left: 40px;
+  height: 30px;
+  line-height: 30px;
+  vertical-align: middle;
+}
+/* line 179, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/controllers/pages.scss */
+.phrases .main-box ol {
+  padding-left: 25px;
+  text-align: center;
+  list-style: none;
+}
+
+/* line 188, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/controllers/pages.scss */
+.riddles .main-box {
+  background: white url(/assets/textures/stinka-1cda40c028e66f2c88756d626eefb2b2eb900756a481edd5df24c2f22f3e9b96.jpg);
+}
+/* line 191, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/controllers/pages.scss */
+.riddles .main-box .box-title {
+  background: transparent url(/assets/icons/quest-f9be986e5f58c0a58ebde5466487963a8609f35c6a51a733a490a376d2b645ce.gif) no-repeat left center;
+  padding-left: 35px;
+  height: 24px;
+  line-height: 24px;
+  vertical-align: middle;
+}
+/* line 199, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/controllers/pages.scss */
+.riddles .main-box .box-content {
+  text-align: center;
+  font-size: 14px;
+}
+/* line 203, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/controllers/pages.scss */
+.riddles .main-box .zahadka {
+  margin-top: 1em;
+}
+/* line 206, /Users/lllukom/projects/lukomorg/app/assets/stylesheets/controllers/pages.scss */
+.riddles .main-box .widhadka {
+  color: #070;
+}
