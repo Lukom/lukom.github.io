@@ -5,6 +5,13 @@
     <description>Усі найсвіжіші новини</description>
     <rss_url/>
     <item>
+      <title>Кайдашева сім'я проти зомбі</title>
+      <description>&lt;div class="box-images"&gt;&lt;a class="preview-image" href="/system/blog-images/2022/kaidasheva-simia.jpg"&gt;&lt;img alt="Книжка «Кайдашева сім'я проти зомбі»" class="photo-image" src="http://lukom.org/system/blog-images/2022/kaidasheva-simia-mini.jpg" style="height:250px; width:188px" /&gt;&lt;/a&gt;&lt;/div&gt; &lt;p&gt;Прочитав я нарешті книжечку &amp;laquo;Кайдашева сім&amp;#39;я проти зомбі&amp;raquo;, яку мені подарували друзі &amp;mdash; зловісне таке чтиво, але мені сподобалось. Що сподобалось:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;140 сторінок &amp;mdash; це прекрасно, можна знайти час навіть дуже зайнятим людям (таким як я )&lt;/li&gt; &lt;li&gt;Картинки є &amp;mdash; можна більше влитись в атмосферу, наприклад церква з гарматами, арбалетами та захисними рунами, або як герой рубає вовків-зомбі, ...&lt;/li&gt; &lt;li&gt;Твір можна описати як мішанку класичного твору + зомбі жахастик + трохи вестерн&lt;/li&gt; &lt;li&gt;Мені трохи нагадався фільми &amp;laquo;Безславні Кріпаки&amp;raquo;, який мені теж сподобався (хоча Батьки сказали що фільм ні про що )&lt;/li&gt; &lt;li&gt;А також нагадались книжки Макса Кідрука &amp;mdash; бо теж жахастик і щось незвичне&lt;/li&gt; &lt;li&gt;В розповіді є і непередбачувані повороти подій і зрадонька, і загалом небанально як у всяких коміксних фільмах де ніхто не помирає&lt;/li&gt; &lt;li&gt;Сподобалась містика навколо тлін-порошку, і дводушників, що кожен герой має якусь свою зброю&lt;/li&gt; &lt;li&gt;Дізнався що автор, Декань Олексій, ще написав інші фантастичні твори,…&lt;/li&gt;&lt;/ul&gt;&lt;a href="/blog/kaidasheva-simia-proty-zombi"&gt;Читати далі&lt;/a&gt;</description>
+      <pubDate>Mon, 24 Jan 2022 00:06:00 +0000</pubDate>
+      <link>http://localhost:3009/blog/kaidasheva-simia-proty-zombi</link>
+      <guid>http://localhost:3009/blog/kaidasheva-simia-proty-zombi</guid>
+    </item>
+    <item>
       <title>Календарик-пинарик на 2022</title>
       <description>&lt;div class="box-images"&gt;&lt;a class="preview-image" href="/system/blog-images/2022/kalendaryk-2022.png"&gt;&lt;img alt="Календарик-пинарик" class="photo-image" src="http://lukom.org/system/blog-images/2022/kalendaryk-2022.png" style="height:250px; width:360px" title="" /&gt;&lt;/a&gt;&lt;/div&gt; &lt;p&gt;Що ж, згідно моєї цьогорічної настанови &lt;a href="/blog/vidrodzhennia-blohu"&gt;Більше планування&lt;/a&gt;, зробив календарик для цього року:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;a class="doc-link" href="/system/files/kalendaryk-pynaryk-2022.docx" style="background-color: rgb(255, 255, 255);"&gt;календарик на 2022-й рік docx&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a class="pdf-link" href="/system/files/kalendaryk-pynaryk-2022.pdf" style="background-color: rgb(255, 255, 255);"&gt;календарик на 2022-й рік pdf&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;a href="/blog/kalendaryk-pynaryk"&gt;Більше про календарик тут&lt;/a&gt;. Цьогоріч спробую робити більший акцент на плануванні ніж занотовуванні що було.&lt;/p&gt;&lt;a href="/blog/kalendaryk-pynaryk-na-2022"&gt;Читати далі&lt;/a&gt;</description>
       <pubDate>Sun, 16 Jan 2022 15:47:47 +0000</pubDate>
@@ -66,13 +73,6 @@
       <pubDate>Thu, 22 May 2014 00:00:00 +0000</pubDate>
       <link>http://localhost:3009/blog/spdy-na-saiti</link>
       <guid>http://localhost:3009/blog/spdy-na-saiti</guid>
-    </item>
-    <item>
-      <title>Думки про резюме</title>
-      <description>&lt;div class="box-images"&gt;&lt;img alt="" class="photo-image" src="http://lukom.org/system/blog-images/sample-resume.png" style="height:200px; width:200px" /&gt;&lt;/div&gt; &lt;p&gt;Виявляється тепер 21-ше століття, і резюме, у вигляді вордівського документу, до якого ми звикли, вже в минулому :) Тепер, щоб податись на роботу не потрібно шукати в неті шаблон резюмешок, заповнювати його, кидати HR`у по скайпу.. - достатньо кинути лінк на &lt;a class="external" href="http://www.linkedin.com" target="_blank"&gt;LinkedIn&lt;/a&gt;. Та й самі HR`и тепер там хантять в першу чергу.&lt;/p&gt;&lt;a href="/blog/dumky-pro-resume"&gt;Читати далі&lt;/a&gt;</description>
-      <pubDate>Tue, 20 May 2014 00:00:00 +0000</pubDate>
-      <link>http://localhost:3009/blog/dumky-pro-resume</link>
-      <guid>http://localhost:3009/blog/dumky-pro-resume</guid>
     </item>
   </channel>
 </rss>
